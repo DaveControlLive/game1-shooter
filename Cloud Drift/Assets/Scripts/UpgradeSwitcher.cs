@@ -32,9 +32,9 @@ public class UpgradeSwitcher : MonoBehaviour
     {
         int upgradeIndex = 0;
 
-        foreach (Transform upgrade in transform)
+        foreach (Transform upgrade in upgradeAnim.transform)
         {
-            if (upgradeIndex <= currentUpgrade + 1)
+            if (upgradeIndex <= currentUpgrade)
             {
                 upgrade.gameObject.SetActive(true);
             }
