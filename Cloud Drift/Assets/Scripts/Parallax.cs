@@ -6,15 +6,17 @@ public class Parallax : MonoBehaviour
 {
     [SerializeField] float animationSpeed = 1f;
 
-    MeshRenderer meshRenderer;
+    Vector2 offset;
+    Material material;
 
     private void Awake()
     {
-        meshRenderer = GetComponent<MeshRenderer>();
+        material = GetComponent<SpriteRenderer>().material;
     }
 
     void Update()
     {
-        meshRenderer.material.mainTextureOffset += new Vector2(animationSpeed * Time.deltaTime, 0);
+        offset = new Vector2(animationSpeed * Time.deltaTime, 0);
+        material.mainTextureOffset += offset;
     }
 }
