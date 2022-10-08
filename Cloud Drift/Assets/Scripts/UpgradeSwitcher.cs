@@ -12,7 +12,7 @@ public class UpgradeSwitcher : MonoBehaviour
     void Start()
     {
         shipAnimator = GetComponent<Animator>();
-        shipAnimator.SetInteger("UpgradeLevel", 1);
+        shipAnimator.SetInteger("UpgradeLevel", 0);
         SetUpgradeLevel();
     }
 
@@ -51,21 +51,22 @@ public class UpgradeSwitcher : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             currentUpgrade = 0;
-            shipAnimator.SetInteger("UpgradeLevel", 1);
+            shipAnimator.SetInteger("UpgradeLevel", 0);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             currentUpgrade = 1;
-            shipAnimator.SetInteger("UpgradeLevel", 2);
+            shipAnimator.SetInteger("UpgradeLevel", 1);
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             currentUpgrade = 2;
-            shipAnimator.SetInteger("UpgradeLevel", 3);
+            shipAnimator.SetInteger("UpgradeLevel", 2);
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             currentUpgrade = 3;
+            shipAnimator.SetInteger("UpgradeLevel", 2);
         }
     }
 
