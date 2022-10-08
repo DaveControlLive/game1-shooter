@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Gun3
+  m_Name: Gun4
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -18,6 +18,23 @@ AnimationClip:
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: 1628609018353146222, guid: 979d96a91ef284809bcd3b7e74e74b34,
+        type: 3}
+    - time: 0.083333336
+      value: {fileID: -7306655572237399132, guid: 979d96a91ef284809bcd3b7e74e74b34,
+        type: 3}
+    - time: 0.16666667
+      value: {fileID: 5771965955024647540, guid: 979d96a91ef284809bcd3b7e74e74b34,
+        type: 3}
+    - time: 0.25
+      value: {fileID: -2377968994695879937, guid: 979d96a91ef284809bcd3b7e74e74b34,
+        type: 3}
+    attribute: m_Sprite
+    path: Animation_Top
+    classID: 212
+    script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: -8861708151677886828, guid: 979d96a91ef284809bcd3b7e74e74b34,
@@ -32,7 +49,7 @@ AnimationClip:
       value: {fileID: 3588302709628763441, guid: 979d96a91ef284809bcd3b7e74e74b34,
         type: 3}
     attribute: m_Sprite
-    path: 
+    path: Animation_Bottom
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 12
@@ -43,13 +60,24 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 1237024275
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    - serializedVersion: 2
+      path: 3562874590
       attribute: 0
       script: {fileID: 0}
       typeID: 212
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
+    - {fileID: 1628609018353146222, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
+    - {fileID: -7306655572237399132, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
+    - {fileID: 5771965955024647540, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
+    - {fileID: -2377968994695879937, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
     - {fileID: -8861708151677886828, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
     - {fileID: -2526299426420112154, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
     - {fileID: 7270168054784154323, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
