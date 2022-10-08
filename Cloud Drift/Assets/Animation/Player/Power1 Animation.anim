@@ -32,7 +32,7 @@ AnimationClip:
       value: {fileID: 7079147233807534215, guid: 979d96a91ef284809bcd3b7e74e74b34,
         type: 3}
     attribute: m_Sprite
-    path: Upgrades/playerBooster_1
+    path: Speed Upgrades/playerBooster_1
     classID: 212
     script: {fileID: 0}
   - curve:
@@ -49,7 +49,7 @@ AnimationClip:
       value: {fileID: 1382462362302480272, guid: 979d96a91ef284809bcd3b7e74e74b34,
         type: 3}
     attribute: m_Sprite
-    path: Upgrades/playerPL1_
+    path: Speed Upgrades/playerPL1_
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 10
@@ -60,14 +60,14 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2974603991
+      path: 2215379242
       attribute: 0
       script: {fileID: 0}
       typeID: 212
       customType: 23
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 1045019267
+      path: 2186029287
       attribute: 0
       script: {fileID: 0}
       typeID: 212

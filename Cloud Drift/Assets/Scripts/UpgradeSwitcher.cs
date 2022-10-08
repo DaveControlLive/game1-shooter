@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class UpgradeSwitcher : MonoBehaviour
 {
-    [SerializeField] int currentUpgrade = 0;
+    [SerializeField] int currentSpeedUpgrade = 0;
+    [SerializeField] int currentGunUpgrade = 0;
     [SerializeField] GameObject upgradeAnim;
+    [SerializeField] GameObject currentGun;
 
     Animator shipAnimator;
 
@@ -13,28 +15,52 @@ public class UpgradeSwitcher : MonoBehaviour
     {
         shipAnimator = GetComponent<Animator>();
         shipAnimator.SetInteger("UpgradeLevel", 0);
-        SetUpgradeLevel();
+        SetSpeedUpgradeLevel();
+        SetGunUpgradeLevel();
     }
 
     void Update()
     {
-        int previousUpgrade = currentUpgrade;
+        int previousSpeedUpgrade = currentSpeedUpgrade;
+        int previousGunUpgrade = currentGunUpgrade;
 
         ProcessKeyInput();
 
-        if (previousUpgrade != currentUpgrade)
+        if (previousSpeedUpgrade != currentSpeedUpgrade)
         {
-            SetUpgradeLevel();
+            SetSpeedUpgradeLevel();
+        }
+        if (previousGunUpgrade != currentGunUpgrade)
+        {
+            SetGunUpgradeLevel();
         }
     }
 
-    void SetUpgradeLevel()
+    void SetSpeedUpgradeLevel()
     {
         int upgradeIndex = 0;
 
         foreach (Transform upgrade in upgradeAnim.transform)
         {
-            if (upgradeIndex <= currentUpgrade)
+            if (upgradeIndex <= currentSpeedUpgrade)
+            {
+                upgrade.gameObject.SetActive(true);
+            }
+            else
+            {
+                upgrade.gameObject.SetActive(false);
+            }
+            upgradeIndex++;
+        }
+    }
+
+    void SetGunUpgradeLevel()
+    {
+        int upgradeIndex = 0;
+
+        foreach (Transform upgrade in currentGun.transform)
+        {
+            if (upgradeIndex + 1 == currentGunUpgrade)
             {
                 upgrade.gameObject.SetActive(true);
             }
@@ -50,28 +76,36 @@ public class UpgradeSwitcher : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            currentUpgrade = 0;
+            currentSpeedUpgrade = 0;
             shipAnimator.SetInteger("UpgradeLevel", 0);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            currentUpgrade = 1;
+            currentSpeedUpgrade = 1;
             shipAnimator.SetInteger("UpgradeLevel", 1);
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            currentUpgrade = 2;
+            currentSpeedUpgrade = 2;
             shipAnimator.SetInteger("UpgradeLevel", 2);
         }
+
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            currentUpgrade = 3;
-            shipAnimator.SetInteger("UpgradeLevel", 2);
+            currentGunUpgrade = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            currentGunUpgrade = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            currentGunUpgrade = 2;
         }
     }
 
     public int GetCurrentUpgrade()
     {
-        return currentUpgrade;
+        return currentSpeedUpgrade;
     }
 }
