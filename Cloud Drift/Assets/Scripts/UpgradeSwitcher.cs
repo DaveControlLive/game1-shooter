@@ -11,9 +11,13 @@ public class UpgradeSwitcher : MonoBehaviour
 
     Animator shipAnimator;
 
-    void Start()
+    void Awake()
     {
         shipAnimator = GetComponent<Animator>();
+    }
+
+    void Start()
+    {
         shipAnimator.SetInteger("UpgradeLevel", 0);
         SetSpeedUpgradeLevel();
         SetGunUpgradeLevel();
@@ -74,6 +78,8 @@ public class UpgradeSwitcher : MonoBehaviour
 
     void ProcessKeyInput()
     {
+        if (shipAnimator == null) { return; }
+
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             currentSpeedUpgrade = 0;
@@ -104,8 +110,13 @@ public class UpgradeSwitcher : MonoBehaviour
         }
     }
 
-    public int GetCurrentUpgrade()
+    public int GetCurrentSpeedUpgrade()
     {
         return currentSpeedUpgrade;
+    }
+
+    public int GetCurrentWeaponUpgrade()
+    {
+        return currentGunUpgrade;
     }
 }

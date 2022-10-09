@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float moveSpeed;
+    [SerializeField] float baseMoveSpeed = 5f;
+    [SerializeField] float upgradeSpeed1 = 7f;
+    [SerializeField] float upgradeSpeed2 = 10f;
+    float moveSpeed;
 
     Vector2 moveDirection;
 
@@ -16,14 +19,27 @@ public class PlayerController : MonoBehaviour
     Vector2 minBounds;
     Vector2 maxBounds;
 
+    int currentSpeedUpgrade = 0;
+    int currentWeaponUpgrade = 0;
+
+    UpgradeSwitcher currentUpgrade;
+
+    void Awake()
+    {
+        currentUpgrade = GetComponent<UpgradeSwitcher>();
+    }
+
     void Start()
     {
+        moveSpeed = baseMoveSpeed;
         InitBounds();
     }
 
     void Update()
     {
+        CheckUpgrades();
         MovePlayer();
+        PlayerShoot();
     }
 
     //Set the bounds of the screen by using the camera viewport
@@ -48,6 +64,43 @@ public class PlayerController : MonoBehaviour
 
         //Set the new postion to be the player's movement within the new, clamped position
         transform.position = newPos;
+    }
+
+    void PlayerShoot()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GetComponent<PlayerShooter>().Shoot(currentWeaponUpgrade);
+        }
+    }
+
+    void CheckUpgrades()
+    {
+        int speedUpgrade = currentUpgrade.GetCurrentSpeedUpgrade();
+
+        if(speedUpgrade != currentSpeedUpgrade)
+        {
+            currentSpeedUpgrade = speedUpgrade;
+            ChangeSpeed();
+        }
+
+        currentWeaponUpgrade = currentUpgrade.GetCurrentWeaponUpgrade();
+    }
+
+    void ChangeSpeed()
+    {
+        if (currentSpeedUpgrade == 0)
+        {
+            moveSpeed = baseMoveSpeed;
+        }
+        if (currentSpeedUpgrade == 1)
+        {
+            moveSpeed = upgradeSpeed1;
+        }
+        if (currentSpeedUpgrade == 2)
+        {
+            moveSpeed = upgradeSpeed2;
+        }
     }
 
 }
