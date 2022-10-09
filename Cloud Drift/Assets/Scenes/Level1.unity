@@ -1033,6 +1033,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  paddingLeft: 0.77
+  paddingRight: 0.75
+  paddingTop: 0.42
+  paddingBottom: 0.33
 --- !u!114 &966237755
 MonoBehaviour:
   m_ObjectHideFlags: 0
