@@ -4,23 +4,13 @@ using UnityEngine;
 
 public class PlayerShooter : MonoBehaviour
 {
-    [SerializeField] float projectileSpeed = 2000f;
+    [SerializeField] float projectileSpeed = 20f;
     [SerializeField] float projectileLifetime = 1f;
 
     [SerializeField] GameObject gunLocation;
     [SerializeField] GameObject gun1;
     [SerializeField] GameObject gun2;
     [SerializeField] GameObject gun3;
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 
     public void Shoot(int currentWeaponUpgrade)
     {
@@ -34,7 +24,7 @@ public class PlayerShooter : MonoBehaviour
             Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.velocity = transform.right * projectileSpeed * Time.deltaTime; //Shoot the bullet "right"
+                rb.velocity = transform.right * projectileSpeed; //Shoot the bullet "right"
             }
         }
         else if (currentWeaponUpgrade == 1)
@@ -45,7 +35,7 @@ public class PlayerShooter : MonoBehaviour
             Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.velocity = transform.right * projectileSpeed * Time.deltaTime; //Shoot the bullet "right"
+                rb.velocity = transform.right * projectileSpeed; //Shoot the bullet "right"
             }
         }
         else if (currentWeaponUpgrade == 2)
@@ -56,7 +46,7 @@ public class PlayerShooter : MonoBehaviour
             Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.velocity = transform.right * projectileSpeed * Time.deltaTime; //Shoot the bullet "right"
+                rb.velocity = transform.right * projectileSpeed; //Shoot the bullet "right"
             }
         }
     }

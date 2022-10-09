@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e1b795c57594dbc88d8ff3b78a8167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 2000
+  projectileSpeed: 20
   projectileLifetime: 1
   gunLocation: {fileID: 1787234830}
   gun1: {fileID: 7753998325014997585, guid: 91ac11247eed944a381f330bc5787ade, type: 3}
