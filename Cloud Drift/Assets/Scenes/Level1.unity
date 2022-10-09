@@ -942,6 +942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 867539781}
+  - component: {fileID: 867539782}
   m_Layer: 0
   m_Name: Gun2
   m_TagString: Untagged
@@ -964,6 +965,19 @@ Transform:
   m_Father: {fileID: 1073464017}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &867539782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867539780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cb14bbd797a436c9892224b2393654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
 --- !u!1 &966237751
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,9 +988,10 @@ GameObject:
   m_Component:
   - component: {fileID: 966237752}
   - component: {fileID: 966237753}
+  - component: {fileID: 966237756}
   - component: {fileID: 966237754}
   - component: {fileID: 966237755}
-  - component: {fileID: 966237756}
+  - component: {fileID: 966237757}
   m_Layer: 0
   m_Name: Player Sprite
   m_TagString: Untagged
@@ -1104,6 +1119,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &966237757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966237751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25578cb941f940beb6afd2edcd9f65e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  currentHealth: 50
 --- !u!1 &1022206004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,6 +1142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1022206005}
+  - component: {fileID: 1022206006}
   m_Layer: 0
   m_Name: Gun1
   m_TagString: Untagged
@@ -1135,6 +1165,19 @@ Transform:
   m_Father: {fileID: 1073464017}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1022206006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022206004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cb14bbd797a436c9892224b2393654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &1073284122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1161631937}
   - component: {fileID: 1161631938}
+  - component: {fileID: 1161631939}
   m_Layer: 0
   m_Name: Gun3
   m_TagString: Untagged
@@ -1253,6 +1297,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1161631939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161631936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cb14bbd797a436c9892224b2393654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 30
 --- !u!1 &1252369564
 GameObject:
   m_ObjectHideFlags: 0
