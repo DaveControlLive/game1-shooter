@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Movement Speed")]
     [SerializeField] float baseMoveSpeed = 5f;
     [SerializeField] float upgradeSpeed1 = 7f;
     [SerializeField] float upgradeSpeed2 = 10f;
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     Vector2 moveDirection;
 
+    [Header("Player Bounds")]
     [SerializeField] float paddingLeft;
     [SerializeField] float paddingRight;
     [SerializeField] float paddingTop;
