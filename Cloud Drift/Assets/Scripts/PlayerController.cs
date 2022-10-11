@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float baseMoveSpeed = 5f;
     [SerializeField] float upgradeSpeed1 = 7f;
     [SerializeField] float upgradeSpeed2 = 10f;
-    float moveSpeed;
+    float[] moveSpeed = new float[3];
 
     Vector2 moveDirection;
 
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        moveSpeed = baseMoveSpeed;
+        SetupSpeeds();
         InitBounds();
     }
 
@@ -42,6 +42,14 @@ public class PlayerController : MonoBehaviour
         CheckUpgrades();
         MovePlayer();
         PlayerShoot();
+    }
+
+    //Add each movespeed into the moveSpeed array to make it quicker/easier to access in code.
+    void SetupSpeeds()
+    {
+        moveSpeed[0] = baseMoveSpeed;
+        moveSpeed[1] = upgradeSpeed1;
+        moveSpeed[2] = upgradeSpeed2;
     }
 
     //Set the bounds of the screen by using the camera viewport
@@ -55,7 +63,7 @@ public class PlayerController : MonoBehaviour
     void MovePlayer()
     {
         //Calculate the speed & direction the player is moving and store it in moveDirection
-        float moveAmount = moveSpeed * Time.deltaTime;
+        float moveAmount = moveSpeed[currentSpeedUpgrade] * Time.deltaTime;
         moveDirection.x = Input.GetAxisRaw("Horizontal") * moveAmount;
         moveDirection.y = Input.GetAxisRaw("Vertical") * moveAmount;
 
@@ -78,31 +86,8 @@ public class PlayerController : MonoBehaviour
 
     void CheckUpgrades()
     {
-        int speedUpgrade = currentUpgrade.GetCurrentSpeedUpgrade();
-
-        if(speedUpgrade != currentSpeedUpgrade)
-        {
-            currentSpeedUpgrade = speedUpgrade;
-            ChangeSpeed();
-        }
-
+        currentSpeedUpgrade = currentUpgrade.GetCurrentSpeedUpgrade();
         currentWeaponUpgrade = currentUpgrade.GetCurrentWeaponUpgrade();
-    }
-
-    void ChangeSpeed()
-    {
-        if (currentSpeedUpgrade == 0)
-        {
-            moveSpeed = baseMoveSpeed;
-        }
-        if (currentSpeedUpgrade == 1)
-        {
-            moveSpeed = upgradeSpeed1;
-        }
-        if (currentSpeedUpgrade == 2)
-        {
-            moveSpeed = upgradeSpeed2;
-        }
     }
 
 }
