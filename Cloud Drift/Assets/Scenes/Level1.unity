@@ -1087,8 +1087,8 @@ MonoBehaviour:
   baseMoveSpeed: 5
   upgradeSpeed1: 7
   upgradeSpeed2: 10
-  paddingLeft: 2.75
-  paddingRight: 2.75
+  paddingLeft: 0.77
+  paddingRight: 0.75
   paddingTop: 0.42
   paddingBottom: 0.33
 --- !u!114 &966237755
@@ -1697,9 +1697,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16cfb67ea1b974c0c9cf7368f07b8bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingLevel0Clip: {fileID: 8300000, guid: c729d32b6c48f4d5e948adf4f90263b3, type: 3}
+  shootingLevel0Clip: {fileID: 8300000, guid: eb44acb107bd68d45911ea7920d6fb8d, type: 3}
   shootingLevel0Volume: 0.8
-  shootingLevel1Clip: {fileID: 8300000, guid: abfa5bcb6b69445e0b2bef20fa6c6ab4, type: 3}
+  shootingLevel1Clip: {fileID: 8300000, guid: e8e3a895b618c3a46b0cb4d7d323578e, type: 3}
   shootingLevel1Volume: 0.8
   shootingLevel2Clip: {fileID: 8300000, guid: 3e82e5e9eef7d47aab771d6b395b3de3, type: 3}
   shootingLevel2Volume: 0.8
