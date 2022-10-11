@@ -12,8 +12,16 @@ public class PlayerShooter : MonoBehaviour
     [SerializeField] GameObject gun2;
     [SerializeField] GameObject gun3;
 
+    AudioPlayer audioPlayer;
+
+    void Awake()
+    {
+        audioPlayer = FindObjectOfType<AudioPlayer>();
+    }
+
     public void Shoot(int currentWeaponUpgrade)
     {
+        audioPlayer.PlayShootingClip(currentWeaponUpgrade);
 
         //Create a new instance of a bullet at the position of the gun
         if (currentWeaponUpgrade == 0)

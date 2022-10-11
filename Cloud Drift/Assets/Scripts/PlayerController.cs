@@ -60,6 +60,12 @@ public class PlayerController : MonoBehaviour
         maxBounds = mainCamera.ViewportToWorldPoint(new Vector2(1, 1)); //Access top right of the screen
     }
 
+    void CheckUpgrades()
+    {
+        currentSpeedUpgrade = currentUpgrade.GetCurrentSpeedUpgrade();
+        currentWeaponUpgrade = currentUpgrade.GetCurrentWeaponUpgrade();
+    }
+
     void MovePlayer()
     {
         //Calculate the speed & direction the player is moving and store it in moveDirection
@@ -82,12 +88,6 @@ public class PlayerController : MonoBehaviour
         {
             GetComponent<PlayerShooter>().Shoot(currentWeaponUpgrade);
         }
-    }
-
-    void CheckUpgrades()
-    {
-        currentSpeedUpgrade = currentUpgrade.GetCurrentSpeedUpgrade();
-        currentWeaponUpgrade = currentUpgrade.GetCurrentWeaponUpgrade();
     }
 
 }
