@@ -924,8 +924,8 @@ MonoBehaviour:
   baseMoveSpeed: 5
   upgradeSpeed1: 7
   upgradeSpeed2: 10
-  paddingLeft: 0.77
-  paddingRight: 0.75
+  paddingLeft: 2.75
+  paddingRight: 2.75
   paddingTop: 0.42
   paddingBottom: 0.33
 --- !u!114 &966237755
