@@ -1105,7 +1105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSpeedUpgrade: 0
   currentGunUpgrade: 0
-  upgradeAnim: {fileID: 1073284122}
+  upgradeAnim: {fileID: 1073284123}
   currentGun: {fileID: 1495141025}
 --- !u!212 &966237756
 SpriteRenderer:

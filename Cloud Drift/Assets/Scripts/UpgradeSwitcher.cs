@@ -6,7 +6,7 @@ public class UpgradeSwitcher : MonoBehaviour
 {
     [SerializeField] int currentSpeedUpgrade = 0;
     [SerializeField] int currentGunUpgrade = 0;
-    [SerializeField] GameObject upgradeAnim;
+    [SerializeField] Transform upgradeAnim;
     [SerializeField] GameObject currentGun;
 
     Animator shipAnimator;
@@ -44,7 +44,7 @@ public class UpgradeSwitcher : MonoBehaviour
     {
         int upgradeIndex = 0;
 
-        foreach (Transform upgrade in upgradeAnim.transform)
+        foreach (Transform upgrade in upgradeAnim)
         {
             if (upgradeIndex <= currentSpeedUpgrade)
             {
