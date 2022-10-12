@@ -47,4 +47,11 @@ public class CarrotMover : MonoBehaviour
 
         transform.position = pos;
     }
+
+    public void Stop()
+    {
+        moveSpeed = 0;
+        amplitude = 0;
+        frequency = 0;
+    }
 }

@@ -1307,6 +1307,14 @@ MonoBehaviour:
   shootingLevel2Volume: 0.8
   playerDamageClip: {fileID: 0}
   damageVolume: 1
+  enemyDamageClip: {fileID: 8300000, guid: bccf3fe98df8a984e937d395fa27d5f7, type: 3}
+  enemyDamageVolume: 1
+  enemySmallDeath: {fileID: 8300000, guid: 2490048af862344aa8119ec99892bae2, type: 3}
+  enemySmallDeathVolume: 1
+  enemyMediumDeath: {fileID: 8300000, guid: 8db1226bee08fa54eac27f5fefd9547f, type: 3}
+  enemyMediumDeathVolume: 1
+  enemyLargeDeath: {fileID: 8300000, guid: 2f972bf32e1bf5748919b830d6ee05a0, type: 3}
+  enemyLargeDeathVolume: 1
 --- !u!82 &1776520458
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1673,6 +1681,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3616823528862852932, guid: 68789e292c1de4764ba8ca903ae73916,
+        type: 3}
+      propertyPath: totalHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7218753531334841013, guid: 68789e292c1de4764ba8ca903ae73916,
         type: 3}
       propertyPath: m_Name

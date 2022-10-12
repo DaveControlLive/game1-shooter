@@ -16,6 +16,16 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] AudioClip playerDamageClip;
     [SerializeField] [Range(0f, 1f)] float damageVolume = 1f;
 
+    [Header("Enemy Damage")]
+    [SerializeField] AudioClip enemyDamageClip;
+    [SerializeField] [Range(0f, 1f)] float enemyDamageVolume = 1f;
+    [SerializeField] AudioClip enemySmallDeath;
+    [SerializeField] [Range(0f, 1f)] float enemySmallDeathVolume = 1f;
+    [SerializeField] AudioClip enemyMediumDeath;
+    [SerializeField] [Range(0f, 1f)] float enemyMediumDeathVolume = 1f;
+    [SerializeField] AudioClip enemyLargeDeath;
+    [SerializeField] [Range(0f, 1f)] float enemyLargeDeathVolume = 1f;
+
     public void PlayShootingClip(int upgradeLevel)
     {
         if(upgradeLevel == 0)
@@ -35,6 +45,27 @@ public class AudioPlayer : MonoBehaviour
     public void PlayDamageClip()
     {
         PlayClip(playerDamageClip, damageVolume);
+    }
+
+    public void PlayEnemyHitClip()
+    {
+        PlayClip(enemyDamageClip, enemyDamageVolume);
+    }
+
+    public void PlayEnemyDeathClip(int enemyLevel)
+    {
+        if(enemyLevel == 1)
+        {
+            PlayClip(enemySmallDeath, enemySmallDeathVolume);
+        }
+        if (enemyLevel == 2)
+        {
+            PlayClip(enemyMediumDeath, enemyMediumDeathVolume);
+        }
+        if (enemyLevel == 3)
+        {
+            PlayClip(enemyLargeDeath, enemyLargeDeathVolume);
+        }
     }
 
     void PlayClip(AudioClip clip, float volume)
