@@ -5,21 +5,23 @@ using UnityEngine;
 public class CarrotMover : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
-    [SerializeField] float amplitude = 2f;
-    [SerializeField] float frequency = 0.5f;
 
     [SerializeField] bool inverted = false;
 
+    WaveConfigSO waveConfig;
+    EnemySpawner enemySpawner;
+
     float sinCenterY;
+
+    void Awake()
+    {
+        enemySpawner = FindObjectOfType<EnemySpawner>();
+    }
 
     void Start()
     {
+        waveConfig = enemySpawner.GetCurrentWave();
         sinCenterY = transform.position.y;
-    }
-
-    void Update()
-    {
-        
     }
 
     void FixedUpdate()
@@ -38,7 +40,7 @@ public class CarrotMover : MonoBehaviour
     void SinMovement()
     {
         Vector2 pos = transform.position;
-        float sin = Mathf.Sin(pos.x * frequency) * amplitude;
+        float sin = Mathf.Sin(pos.x * waveConfig.GetFrequency()) * waveConfig.GetAmplitude();
         if (inverted)
         {
             sin *= -1;
@@ -51,7 +53,5 @@ public class CarrotMover : MonoBehaviour
     public void Stop()
     {
         moveSpeed = 0;
-        amplitude = 0;
-        frequency = 0;
     }
 }
