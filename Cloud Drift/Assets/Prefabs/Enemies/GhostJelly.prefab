@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5505603575148085850}
   - component: {fileID: 8411557829779093970}
   - component: {fileID: 4078661745413820772}
+  - component: {fileID: 3276926077575639761}
   m_Layer: 0
   m_Name: GhostJelly
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +115,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyLevel: 2
-  totalHealth: 50
+  totalHealth: 100
+  spriteRenderer: {fileID: 3236093130104075936}
+--- !u!114 &3276926077575639761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236093129006368245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cb14bbd797a436c9892224b2393654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &3236093130104075938
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +179,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0c4508bac2d224ceb83a40832b085f91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
