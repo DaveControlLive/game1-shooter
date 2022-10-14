@@ -50,7 +50,10 @@ public class PlayerHealth : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            TakeDamage(other.GetComponent<DamageDealer>().GetDamage());
+            if (other.GetComponent<DamageDealer>().IsOn())
+            {
+                TakeDamage(other.GetComponent<DamageDealer>().GetDamage());
+            }
         }
     }
 

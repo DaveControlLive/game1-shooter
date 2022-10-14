@@ -56,6 +56,7 @@ public class EnemyHealth : MonoBehaviour
     IEnumerator Die()
     {
         isDead = true;
+        GetComponent<DamageDealer>().TurnOff();
         float animationWait = 0.4f;
         if (enemyLevel == 1)
         {
