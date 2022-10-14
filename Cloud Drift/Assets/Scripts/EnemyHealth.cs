@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] int enemyLevel = 1;
     [SerializeField] int totalHealth = 10;
+    [SerializeField] SpriteRenderer spriteRenderer;
     int currentHealth;
 
     AudioPlayer audioPlayer;
@@ -48,6 +49,7 @@ public class EnemyHealth : MonoBehaviour
         else
         {
             audioPlayer.PlayEnemyHitClip();
+            StartCoroutine(EnemyHitFlash());
         }
     }
 
@@ -74,5 +76,12 @@ public class EnemyHealth : MonoBehaviour
 
         yield return new WaitForSeconds(animationWait);
         Destroy(gameObject);
+    }
+
+    IEnumerator EnemyHitFlash()
+    {
+        spriteRenderer.material.SetFloat("_FlashAmount", 1f);
+        yield return new WaitForSeconds(0.05f);
+        spriteRenderer.material.SetFloat("_FlashAmount", 0f);
     }
 }

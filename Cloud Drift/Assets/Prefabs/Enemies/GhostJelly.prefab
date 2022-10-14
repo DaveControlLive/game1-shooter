@@ -114,7 +114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyLevel: 2
-  totalHealth: 50
+  totalHealth: 100
+  spriteRenderer: {fileID: 3236093130104075936}
 --- !u!1 &3236093130104075938
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +165,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0c4508bac2d224ceb83a40832b085f91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
