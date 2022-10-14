@@ -23,7 +23,7 @@ MonoBehaviour:
   timeBetweenEnemySpawns: 0.4
   spawnTimeVariance: 0
   minimumSpawnTime: 0.2
-  timeBeforeNextWave: 0.5
+  timeBeforeNextWave: 1.5
   amplitude: 2.5
   frequency: 0.7
   pathPrefab: {fileID: 0}

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 6625750881471604143}
   - component: {fileID: 1823485990591415473}
   - component: {fileID: 273660752245015814}
+  - component: {fileID: 699035918199296659}
   m_Layer: 0
   m_Name: Beholder
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,6 +117,19 @@ MonoBehaviour:
   enemyLevel: 3
   totalHealth: 250
   spriteRenderer: {fileID: 4606559739996853335}
+--- !u!114 &699035918199296659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606559739616163922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cb14bbd797a436c9892224b2393654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &4606559739996853329
 GameObject:
   m_ObjectHideFlags: 0
