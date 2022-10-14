@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarrotMover : MonoBehaviour
+public class GhostJellyMover : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float moveSpeed = 2f;
+
+    [SerializeField] bool inverted = false;
 
     WaveConfigSO waveConfig;
     EnemySpawner enemySpawner;
@@ -39,7 +41,7 @@ public class CarrotMover : MonoBehaviour
     {
         Vector2 pos = transform.position;
         float sin = Mathf.Sin(pos.x * waveConfig.GetFrequency()) * waveConfig.GetAmplitude();
-        if (waveConfig.GetInverted())
+        if (inverted)
         {
             sin *= -1;
         }

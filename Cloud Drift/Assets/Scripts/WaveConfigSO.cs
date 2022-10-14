@@ -21,6 +21,7 @@ public class WaveConfigSO : ScriptableObject
     [Header("Carrot Enemy")]
     [SerializeField] float amplitude = 2f;
     [SerializeField] float frequency = 0.5f;
+    [SerializeField] bool inverted;
 
 
     [Header("Other unused for now")]
@@ -89,6 +90,11 @@ public class WaveConfigSO : ScriptableObject
     public float GetFrequency()
     {
         return frequency;
+    }
+
+    public bool GetInverted()
+    {
+        return inverted;
     }
 
     public Vector2 GetStartingPosition()

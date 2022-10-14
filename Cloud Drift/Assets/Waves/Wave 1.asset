@@ -26,5 +26,6 @@ MonoBehaviour:
   timeBeforeNextWave: 1.5
   amplitude: 2.5
   frequency: 0.7
+  inverted: 0
   pathPrefab: {fileID: 0}
   moveSpeed: 5
