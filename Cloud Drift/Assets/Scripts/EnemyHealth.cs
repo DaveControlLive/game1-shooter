@@ -66,6 +66,7 @@ public class EnemyHealth : MonoBehaviour
         if (enemyLevel == 2)
         {
             animationWait = 0.5f;
+            GetComponent<EnemyShooter>().IsDying();
         }
         if (enemyLevel == 3)
         {

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerWeapon
   - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -55,6 +56,12 @@ TagManager:
   - name: BGClouds2
     uniqueID: 1947010899
     locked: 0
+  - name: Enemies
+    uniqueID: 86144251
+    locked: 0
   - name: Player
     uniqueID: 1644209193
+    locked: 0
+  - name: Weapons
+    uniqueID: 451245715
     locked: 0

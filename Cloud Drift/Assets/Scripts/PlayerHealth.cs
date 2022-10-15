@@ -48,11 +48,21 @@ public class PlayerHealth : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Enemy")
+        DamageDealer damageDealer = other.GetComponent<DamageDealer>();
+
+        if (damageDealer != null)
         {
-            if (other.GetComponent<DamageDealer>().IsOn())
+            if (other.tag == "Enemy")
             {
-                TakeDamage(other.GetComponent<DamageDealer>().GetDamage());
+                if (damageDealer.IsOn())
+                {
+                    TakeDamage(damageDealer.GetDamage());
+                }
+            }
+            if (other.tag == "Bullet")
+            {
+                TakeDamage(damageDealer.GetDamage());
+                damageDealer.Hit();
             }
         }
     }
