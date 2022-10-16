@@ -7,6 +7,8 @@ public class GhostJellyMover : MonoBehaviour
     [SerializeField] float moveSpeed = 1f;
     [SerializeField] float wobbleAmount = 1f;
     [SerializeField] float wobbleTime = 5f;
+    [SerializeField] float yMax = 2.5f;
+    [SerializeField] float yMin = -3.5f;
 
     WaveConfigSO waveConfig;
     EnemySpawner enemySpawner;
@@ -56,9 +58,14 @@ public class GhostJellyMover : MonoBehaviour
         {
             wobbleAmount = -wobbleAmount;
         }
-
-        //TODO Add statement that if it's a certain y max value, wobbleAmount is automatically -.
-        //TODO Add statement that i it's a certain y min value, wobbleAmount is automatically +.
+        if (wobbleAmount > 0 && transform.position.y >= yMax)
+        {
+            wobbleAmount = -wobbleAmount;
+        }
+        if (wobbleAmount < 0 && transform.position.y <= yMin)
+        {
+            wobbleAmount = -wobbleAmount;
+        }
 
         yield return new WaitForSeconds(wobbleTime);
 
