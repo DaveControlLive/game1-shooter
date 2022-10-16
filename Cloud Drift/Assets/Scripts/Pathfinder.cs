@@ -8,6 +8,7 @@ public class Pathfinder : MonoBehaviour
     WaveConfigSO waveConfig;
     List<Transform> waypoints;
     int waypointIndex = 0;
+    Transform path;
 
     void Awake()
     {
@@ -17,8 +18,25 @@ public class Pathfinder : MonoBehaviour
     void Start()
     {
         waveConfig = enemySpawner.GetCurrentWave();
-        waypoints = waveConfig.GetWaypoints();
+        path = waveConfig.GetRandomPath();
+        GetWaypoints();
+
         transform.position = waypoints[waypointIndex].position;
+    }
+
+    void GetStartingWaypoint()
+    {
+        path.GetChild(0);
+    }
+
+    void GetWaypoints()
+    {
+        waypoints = new List<Transform>();
+
+        foreach (Transform child in path)
+        {
+            waypoints.Add(child);
+        }
     }
 
     void Update()
