@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9062539410564212602}
   - component: {fileID: 9062539410564212603}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Animation_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 9062539410904961499}
   - component: {fileID: 9062539410904961500}
   - component: {fileID: 9062539410904961501}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gun3
   m_TagString: PlayerWeapon
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9062539411273993796}
   - component: {fileID: 9062539411273993797}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Animation_Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}

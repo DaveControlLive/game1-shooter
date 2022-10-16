@@ -8,12 +8,16 @@ public class UpgradeSwitcher : MonoBehaviour
     [SerializeField] int currentGunUpgrade = 0;
     [SerializeField] Transform upgradeAnim;
     [SerializeField] GameObject currentGun;
+    [SerializeField] int healthUpgrade = 10;
+
+    PlayerHealth playerHealth;
 
     Animator shipAnimator;
 
     void Awake()
     {
         shipAnimator = GetComponent<Animator>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     void Start()
@@ -56,6 +60,10 @@ public class UpgradeSwitcher : MonoBehaviour
             }
             upgradeIndex++;
         }
+
+        if(shipAnimator == null) { return; }
+
+        shipAnimator.SetInteger("UpgradeLevel", currentSpeedUpgrade);
     }
 
     void SetGunUpgradeLevel()
@@ -118,5 +126,26 @@ public class UpgradeSwitcher : MonoBehaviour
     public int GetCurrentWeaponUpgrade()
     {
         return currentGunUpgrade;
+    }
+
+    public void AddUpgrade(int upgradeType)
+    {
+        //Health
+        if (upgradeType == 1)
+        {
+            playerHealth.GetHealth(healthUpgrade);
+        }
+        //Speed
+        if (upgradeType == 2 && currentSpeedUpgrade < 2)
+        {
+            currentSpeedUpgrade++;
+            SetSpeedUpgradeLevel();
+        }
+        //Gun
+        if (upgradeType == 3 && currentGunUpgrade < 2)
+        {
+            currentGunUpgrade++;
+            SetGunUpgradeLevel();
+        }
     }
 }

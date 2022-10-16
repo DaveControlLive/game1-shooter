@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7218753531028988467}
   - component: {fileID: 7218753531028988476}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 7218753531334841008}
   - component: {fileID: 3616823528862852932}
   - component: {fileID: -4522602452559763166}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CarrotEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -197,7 +197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f01ff0cf57547328a0c3514b63d29a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
 --- !u!114 &3616823528862852932
 MonoBehaviour:
   m_ObjectHideFlags: 0

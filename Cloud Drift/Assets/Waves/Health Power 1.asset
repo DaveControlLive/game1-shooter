@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d628782477cd746e696c5a4484215b0e, type: 3}
+  m_Name: Health Power 1
+  m_EditorClassIdentifier: 
+  enemyType: 1
+  powerupType: 1
+  enemyPrefabs:
+  - {fileID: 1822668479353953551, guid: f0c77d2a5ac0d4bb484ba22744473977, type: 3}
+  startingPosition: {x: 11, y: 0}
+  moveSpeed: 5
+  timeBetweenEnemySpawns: 1
+  spawnTimeVariance: 0
+  minimumSpawnTime: 0.2
+  timeBeforeNextWave: 0.5
+  amplitude: 2
+  frequency: 0.5
+  inverted: 0
+  wobbleAmount: 1
+  wobbleTime: 5
+  yMax: 2.5
+  yMin: -3.5
+  pathPrefab: {fileID: 0}

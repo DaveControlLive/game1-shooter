@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1823485990591415473}
   - component: {fileID: 273660752245015814}
   - component: {fileID: 699035918199296659}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Beholder
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4606559739996853328}
   - component: {fileID: 4606559739996853335}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

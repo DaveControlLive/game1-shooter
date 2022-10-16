@@ -8,6 +8,9 @@ public class WaveConfigSO : ScriptableObject
     [Header("EnemyType")]
     [SerializeField] int enemyType = 1;
 
+    [Header("Power Up Type")]
+    [SerializeField] int powerupType = 1;
+
     [Header("Enemies in Wave")]
     [SerializeField] List<GameObject> enemyPrefabs;
 
@@ -19,7 +22,7 @@ public class WaveConfigSO : ScriptableObject
     [SerializeField] float minimumSpawnTime = 0.2f;
     [SerializeField] float timeBeforeNextWave = 0.5f;
 
-    [Header("Carrot Enemy")]
+    [Header("Carrot Enemy / Power Up")]
     [SerializeField] float amplitude = 2f;
     [SerializeField] float frequency = 0.5f;
     [SerializeField] bool inverted;
@@ -125,5 +128,10 @@ public class WaveConfigSO : ScriptableObject
     public float GetYMin()
     {
         return yMin;
+    }
+
+    public int GetPowerupType()
+    {
+        return powerupType;
     }
 }

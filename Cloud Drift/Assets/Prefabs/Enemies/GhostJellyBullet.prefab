@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 920338687076358451}
   - component: {fileID: 920338687076358449}
   - component: {fileID: -6009533483008321629}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GhostJellyBullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 451245715
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 1
   m_Sprite: {fileID: -7671945531170686519, guid: db62a4915044ab043a89a835bd0c9881,
     type: 3}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7753998323950205302}
   - component: {fileID: 7753998323950205296}
   - component: {fileID: 7753998323950205297}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1644209193
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 5532474974073507098, guid: 979d96a91ef284809bcd3b7e74e74b34,
     type: 3}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 7753998325014997587}
   - component: {fileID: 7753998325014997586}
   - component: {fileID: 7753998325014997597}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gun1
   m_TagString: PlayerWeapon
   m_Icon: {fileID: 0}

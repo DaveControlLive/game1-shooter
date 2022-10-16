@@ -226,7 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 168091149}
   - component: {fileID: 168091150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: playerPL1_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 272968434}
   - component: {fileID: 272968435}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: playerPL2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 433799067}
   - component: {fileID: 433799068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Upgrade 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -779,7 +779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 646527351}
   - component: {fileID: 646527352}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: playerBooster_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -868,9 +868,9 @@ GameObject:
   - component: {fileID: 966237755}
   - component: {fileID: 966237757}
   - component: {fileID: 966237758}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -946,6 +946,7 @@ MonoBehaviour:
   currentGunUpgrade: 0
   upgradeAnim: {fileID: 1073284123}
   currentGun: {fileID: 1495141025}
+  healthUpgrade: 0
 --- !u!212 &966237756
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1085,7 +1086,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1073284123}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Speed Upgrades
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1213,7 +1214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1495141026}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1246,7 +1247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1535853448}
   - component: {fileID: 1535853449}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Upgrade 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1566,7 +1567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1787234831}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gun Shooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1633,10 +1634,19 @@ MonoBehaviour:
   waveConfigs:
   - {fileID: 11400000, guid: ff1c6b055ffc44e2da0052ba3f381cf6, type: 2}
   - {fileID: 11400000, guid: 50e6d6cc99ec349c18b9e3d3e4cd39a3, type: 2}
-  - {fileID: 11400000, guid: ff1c6b055ffc44e2da0052ba3f381cf6, type: 2}
+  - {fileID: 11400000, guid: 567df43101f7f4f05bd67799fe3c2233, type: 2}
   - {fileID: 11400000, guid: 66e34ec4c8fff4df99d85a281adb6ad3, type: 2}
   - {fileID: 11400000, guid: 50e6d6cc99ec349c18b9e3d3e4cd39a3, type: 2}
   - {fileID: 11400000, guid: 09f1c0e48bd7a4b5a8905e3de576266c, type: 2}
+  - {fileID: 11400000, guid: 567df43101f7f4f05bd67799fe3c2233, type: 2}
+  - {fileID: 11400000, guid: 0fe1f6995abbd4b798378527c032fa69, type: 2}
+  - {fileID: 11400000, guid: fba7fc79f55d8478a9c355e776a870f8, type: 2}
+  - {fileID: 11400000, guid: fba7fc79f55d8478a9c355e776a870f8, type: 2}
+  - {fileID: 11400000, guid: 09f1c0e48bd7a4b5a8905e3de576266c, type: 2}
+  - {fileID: 11400000, guid: 66e34ec4c8fff4df99d85a281adb6ad3, type: 2}
+  - {fileID: 11400000, guid: 09f1c0e48bd7a4b5a8905e3de576266c, type: 2}
+  - {fileID: 11400000, guid: 50e6d6cc99ec349c18b9e3d3e4cd39a3, type: 2}
+  - {fileID: 11400000, guid: 66e34ec4c8fff4df99d85a281adb6ad3, type: 2}
 --- !u!1001 &4606559740674591587
 PrefabInstance:
   m_ObjectHideFlags: 0
