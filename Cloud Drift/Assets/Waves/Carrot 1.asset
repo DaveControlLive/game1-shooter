@@ -10,22 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d628782477cd746e696c5a4484215b0e, type: 3}
-  m_Name: Wave 1
+  m_Name: Carrot 1
   m_EditorClassIdentifier: 
   enemyType: 1
+  powerupType: 1
   enemyPrefabs:
   - {fileID: 7218753531334841013, guid: 68789e292c1de4764ba8ca903ae73916, type: 3}
   - {fileID: 7218753531334841013, guid: 68789e292c1de4764ba8ca903ae73916, type: 3}
   - {fileID: 7218753531334841013, guid: 68789e292c1de4764ba8ca903ae73916, type: 3}
-  - {fileID: 7218753531334841013, guid: 68789e292c1de4764ba8ca903ae73916, type: 3}
-  - {fileID: 7218753531334841013, guid: 68789e292c1de4764ba8ca903ae73916, type: 3}
-  startingPosition: {x: 11, y: 2}
+  startingPosition: {x: 11, y: 0}
+  moveSpeed: 5
   timeBetweenEnemySpawns: 0.4
   spawnTimeVariance: 0
   minimumSpawnTime: 0.2
-  timeBeforeNextWave: 1.5
-  amplitude: 2.5
-  frequency: 0.7
+  timeBeforeNextWave: 0.5
+  amplitude: 2
+  frequency: 0.5
   inverted: 0
+  wobbleAmount: 1
+  wobbleTime: 5
+  yMax: 2.5
+  yMin: -3.5
   pathPrefab: {fileID: 0}
-  moveSpeed: 5

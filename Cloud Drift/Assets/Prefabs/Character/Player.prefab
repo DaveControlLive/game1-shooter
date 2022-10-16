@@ -337,7 +337,7 @@ MonoBehaviour:
   currentGunUpgrade: 0
   upgradeAnim: {fileID: 5657552973381527508}
   currentGun: {fileID: 5657552972817328494}
-  healthUpgrade: 0
+  healthUpgrade: 10
 --- !u!114 &5657552973345258994
 MonoBehaviour:
   m_ObjectHideFlags: 0
