@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class GhostJellyMover : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 2f;
-
-    [SerializeField] bool inverted = false;
+    [SerializeField] float moveSpeed = 1f;
+    [SerializeField] float wobbleAmount = 1f;
+    [SerializeField] float wobbleTime = 5f;
 
     WaveConfigSO waveConfig;
     EnemySpawner enemySpawner;
-
-    float sinCenterY;
+    bool wobbleSwitcher = true;
+    bool wobble = true;
+    bool moveUp = true;
 
     void Awake()
     {
@@ -20,38 +21,54 @@ public class GhostJellyMover : MonoBehaviour
 
     void Start()
     {
-        waveConfig = enemySpawner.GetCurrentWave();
-        sinCenterY = transform.position.y;
+        //waveConfig = enemySpawner.GetCurrentWave();
     }
 
     void FixedUpdate()
     {
         MoveRightToLeft();
-        SinMovement();
+        if (wobbleSwitcher)
+        {
+            StartCoroutine(WobbleOn());
+        }
     }
 
     void MoveRightToLeft()
     {
         Vector2 pos = transform.position;
         pos.x -= moveSpeed * Time.deltaTime;
+
+        if(wobble)
+        {
+            pos.y += moveSpeed * wobbleAmount * Time.deltaTime;
+        }
+
         transform.position = pos;
     }
 
-    void SinMovement()
+    IEnumerator WobbleOn()
     {
-        Vector2 pos = transform.position;
-        float sin = Mathf.Sin(pos.x * waveConfig.GetFrequency()) * waveConfig.GetAmplitude();
-        if (inverted)
-        {
-            sin *= -1;
-        }
-        pos.y = sinCenterY + sin;
+        wobbleSwitcher = false;
+        wobble = !wobble;
 
-        transform.position = pos;
+        int wobbleDirection = Random.Range(0, 2);
+        if (wobbleDirection < 1)
+        {
+            wobbleAmount = -wobbleAmount;
+        }
+
+        //TODO Add statement that if it's a certain y max value, wobbleAmount is automatically -.
+        //TODO Add statement that i it's a certain y min value, wobbleAmount is automatically +.
+
+        yield return new WaitForSeconds(wobbleTime);
+
+        wobbleSwitcher = true;
+
     }
 
     public void Stop()
     {
         moveSpeed = 0;
     }
+
 }

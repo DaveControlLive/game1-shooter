@@ -283,6 +283,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: GhostJelly
       objectReference: {fileID: 0}
+    - target: {fileID: 3839034874907195168, guid: b12901fddfcfa44b4b680f1df780c178,
+        type: 3}
+      propertyPath: wobbleTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3839034874907195168, guid: b12901fddfcfa44b4b680f1df780c178,
+        type: 3}
+      propertyPath: wobbleAmount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b12901fddfcfa44b4b680f1df780c178, type: 3}
 --- !u!1 &168091148

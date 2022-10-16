@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 4078661745413820772}
   - component: {fileID: 3276926077575639761}
   - component: {fileID: 5741056270111866407}
+  - component: {fileID: 3839034874907195168}
   m_Layer: 0
   m_Name: GhostJelly
   m_TagString: Enemy
@@ -179,6 +180,19 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 10
   bullets: []
+--- !u!114 &3839034874907195168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236093129006368245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b18c887ca8c40c890e701d8eaf587a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
 --- !u!1 &3236093130104075938
 GameObject:
   m_ObjectHideFlags: 0
