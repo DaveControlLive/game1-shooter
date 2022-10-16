@@ -23,6 +23,11 @@ public class WaveConfigSO : ScriptableObject
     [SerializeField] float frequency = 0.5f;
     [SerializeField] bool inverted;
 
+    [Header("Ghost Jelly Enemy")]
+    [SerializeField] float wobbleAmount = 1f;
+    [SerializeField] float wobbleTime = 5f;
+    [SerializeField] float yMax = 2.5f;
+    [SerializeField] float yMin = -3.5f;
 
     [Header("Other unused for now")]
     [SerializeField] Transform pathPrefab;
@@ -100,5 +105,25 @@ public class WaveConfigSO : ScriptableObject
     public Vector2 GetStartingPosition()
     {
         return startingPosition;
+    }
+
+    public float GetWobbleAmount()
+    {
+        return wobbleAmount;
+    }
+
+    public float GetWobbleTime()
+    {
+        return wobbleTime;
+    }
+
+    public float GetYMax()
+    {
+        return yMax;
+    }
+
+    public float GetYMin()
+    {
+        return yMin;
     }
 }

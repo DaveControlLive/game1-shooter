@@ -5,10 +5,11 @@ using UnityEngine;
 public class GhostJellyMover : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
-    [SerializeField] float wobbleAmount = 1f;
-    [SerializeField] float wobbleTime = 5f;
-    [SerializeField] float yMax = 2.5f;
-    [SerializeField] float yMin = -3.5f;
+
+    float wobbleAmount;
+    float wobbleTime;
+    float yMax;
+    float yMin;
 
     WaveConfigSO waveConfig;
     EnemySpawner enemySpawner;
@@ -23,7 +24,12 @@ public class GhostJellyMover : MonoBehaviour
 
     void Start()
     {
-        //waveConfig = enemySpawner.GetCurrentWave();
+        waveConfig = enemySpawner.GetCurrentWave();
+        wobbleAmount = waveConfig.GetWobbleAmount();
+        wobbleTime = waveConfig.GetWobbleTime();
+        yMax = waveConfig.GetYMax();
+        yMin = waveConfig.GetYMin();
+
     }
 
     void FixedUpdate()
@@ -46,6 +52,11 @@ public class GhostJellyMover : MonoBehaviour
         }
 
         transform.position = pos;
+
+        if(transform.position.x < -10.5)
+        {
+            AutoDestruct();
+        }
     }
 
     IEnumerator WobbleOn()
@@ -71,6 +82,11 @@ public class GhostJellyMover : MonoBehaviour
 
         wobbleSwitcher = true;
 
+    }
+
+    void AutoDestruct()
+    {
+        Destroy(gameObject);
     }
 
     public void Stop()

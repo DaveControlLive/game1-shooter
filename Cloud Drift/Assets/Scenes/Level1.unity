@@ -216,85 +216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationSpeed: 1.2
---- !u!1001 &157039523
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3236093129006368243, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236093129006368243, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236093129006368243, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236093129006368243, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236093129006368243, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236093129006368243, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236093129006368243, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236093129006368243, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236093129006368243, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236093129006368243, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236093129006368243, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236093129006368245, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: m_Name
-      value: GhostJelly
-      objectReference: {fileID: 0}
-    - target: {fileID: 3839034874907195168, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: wobbleTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3839034874907195168, guid: b12901fddfcfa44b4b680f1df780c178,
-        type: 3}
-      propertyPath: wobbleAmount
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b12901fddfcfa44b4b680f1df780c178, type: 3}
 --- !u!1 &168091148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1713,6 +1634,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ff1c6b055ffc44e2da0052ba3f381cf6, type: 2}
   - {fileID: 11400000, guid: 50e6d6cc99ec349c18b9e3d3e4cd39a3, type: 2}
   - {fileID: 11400000, guid: ff1c6b055ffc44e2da0052ba3f381cf6, type: 2}
+  - {fileID: 11400000, guid: 66e34ec4c8fff4df99d85a281adb6ad3, type: 2}
+  - {fileID: 11400000, guid: 50e6d6cc99ec349c18b9e3d3e4cd39a3, type: 2}
+  - {fileID: 11400000, guid: 09f1c0e48bd7a4b5a8905e3de576266c, type: 2}
 --- !u!1001 &4606559740674591587
 PrefabInstance:
   m_ObjectHideFlags: 0
