@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyLevel: 2
-  totalHealth: 100
+  totalHealth: 150
   spriteRenderer: {fileID: 3236093130104075936}
 --- !u!114 &3276926077575639761
 MonoBehaviour:
@@ -179,7 +179,6 @@ MonoBehaviour:
   ghostJellyAmmo: {fileID: 920338687076358445, guid: f571f9384e5af4154a92cf00d70a32ac,
     type: 3}
   projectileSpeed: 10
-  bullets: []
 --- !u!114 &3839034874907195168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b18c887ca8c40c890e701d8eaf587a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
 --- !u!1 &3236093130104075938
 GameObject:
   m_ObjectHideFlags: 0

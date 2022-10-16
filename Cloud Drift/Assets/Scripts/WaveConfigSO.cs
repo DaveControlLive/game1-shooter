@@ -13,6 +13,7 @@ public class WaveConfigSO : ScriptableObject
 
     [Header("All Enemies in Wave:")]
     [SerializeField] Vector2 startingPosition = new Vector2(11, 0);
+    [SerializeField] float moveSpeed = 5f;
     [SerializeField] float timeBetweenEnemySpawns = 1f;
     [SerializeField] float spawnTimeVariance = 0f;
     [SerializeField] float minimumSpawnTime = 0.2f;
@@ -31,7 +32,6 @@ public class WaveConfigSO : ScriptableObject
 
     [Header("Other unused for now")]
     [SerializeField] Transform pathPrefab;
-    [SerializeField] float moveSpeed = 5f;
 
     public int GetEnemyType()
     {

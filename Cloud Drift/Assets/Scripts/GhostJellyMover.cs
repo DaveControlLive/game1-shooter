@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GhostJellyMover : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 1f;
+    float moveSpeed = 1f;
 
     float wobbleAmount;
     float wobbleTime;
@@ -15,7 +15,6 @@ public class GhostJellyMover : MonoBehaviour
     EnemySpawner enemySpawner;
     bool wobbleSwitcher = true;
     bool wobble = true;
-    bool moveUp = true;
 
     void Awake()
     {
@@ -29,6 +28,7 @@ public class GhostJellyMover : MonoBehaviour
         wobbleTime = waveConfig.GetWobbleTime();
         yMax = waveConfig.GetYMax();
         yMin = waveConfig.GetYMin();
+        moveSpeed = waveConfig.GetMoveSpeed();
 
     }
 

@@ -7,7 +7,6 @@ public class EnemyShooter : MonoBehaviour
     [SerializeField] GameObject ghostJellyGuns;
     [SerializeField] GameObject ghostJellyAmmo;
     [SerializeField] float projectileSpeed = 10f;
-    [SerializeField] float[] bullets;
     float projectileLifetime = 2f;
 
     EnemySpawner enemySpawner;

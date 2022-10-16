@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyLevel: 3
-  totalHealth: 250
+  totalHealth: 300
   spriteRenderer: {fileID: 4606559739996853335}
 --- !u!114 &699035918199296659
 MonoBehaviour:

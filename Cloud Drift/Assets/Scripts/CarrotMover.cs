@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarrotMover : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 5f;
+    float moveSpeed = 5f;
 
     WaveConfigSO waveConfig;
     EnemySpawner enemySpawner;
@@ -19,6 +19,7 @@ public class CarrotMover : MonoBehaviour
     void Start()
     {
         waveConfig = enemySpawner.GetCurrentWave();
+        moveSpeed = waveConfig.GetMoveSpeed();
         sinCenterY = transform.position.y;
     }
 
