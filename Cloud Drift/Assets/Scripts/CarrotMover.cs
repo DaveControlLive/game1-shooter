@@ -33,6 +33,11 @@ public class CarrotMover : MonoBehaviour
         Vector2 pos = transform.position;
         pos.x -= moveSpeed * Time.deltaTime;
         transform.position = pos;
+
+        if(transform.position.x <= -10.5)
+        {
+            AutoDestruct();
+        }
     }
 
     void SinMovement()
@@ -46,6 +51,11 @@ public class CarrotMover : MonoBehaviour
         pos.y = sinCenterY + sin;
 
         transform.position = pos;
+    }
+
+    void AutoDestruct()
+    {
+        Destroy(gameObject);
     }
 
     public void Stop()
