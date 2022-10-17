@@ -58,6 +58,7 @@ public class PowerUpCollider : MonoBehaviour
     {
         powerupGetter = powerUp.GetComponent<PowerUpGetter>();
         powerupGetter.SetPowerup(powerupType);
+        GetComponent<PolygonCollider2D>().enabled = false;
 
         capsuleAnimator.SetTrigger("CapsuleDestroyed");
         yield return new WaitForSeconds(0.5f);

@@ -651,9 +651,9 @@ MonoBehaviour:
   shootingLevel0Clip: {fileID: 8300000, guid: eb44acb107bd68d45911ea7920d6fb8d, type: 3}
   shootingLevel0Volume: 0.27
   shootingLevel1Clip: {fileID: 8300000, guid: e8e3a895b618c3a46b0cb4d7d323578e, type: 3}
-  shootingLevel1Volume: 0.611
+  shootingLevel1Volume: 0.4
   shootingLevel2Clip: {fileID: 8300000, guid: 0729874895575f941bd796bffc097a48, type: 3}
-  shootingLevel2Volume: 0.693
+  shootingLevel2Volume: 0.4
   playerDamageClip: {fileID: 8300000, guid: bc31a9fcf65876f479ffbb39880dfead, type: 3}
   damageVolume: 0.528
   playerDeathClip: {fileID: 8300000, guid: b0a805c56987c4b8aa1541e33f0a0703, type: 3}
@@ -682,7 +682,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 87db4223726ab443e8148063471361b0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 052e5c2fe63624df89b9bdc21bf726eb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
