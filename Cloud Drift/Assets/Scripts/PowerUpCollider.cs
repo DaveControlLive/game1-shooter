@@ -11,6 +11,7 @@ public class PowerUpCollider : MonoBehaviour
 
     WaveConfigSO waveConfig;
     EnemySpawner enemySpawner;
+    AudioPlayer audioPlayer;
 
     int powerupType;
     bool canGetPower;
@@ -18,6 +19,7 @@ public class PowerUpCollider : MonoBehaviour
     void Awake()
     {
         enemySpawner = FindObjectOfType<EnemySpawner>();
+        audioPlayer = FindObjectOfType<AudioPlayer>();
     }
 
     void Start()
@@ -59,6 +61,7 @@ public class PowerUpCollider : MonoBehaviour
         powerupGetter = powerUp.GetComponent<PowerUpGetter>();
         powerupGetter.SetPowerup(powerupType);
         GetComponent<PolygonCollider2D>().enabled = false;
+        audioPlayer.PlayCapsuleDestroyed();
 
         capsuleAnimator.SetTrigger("CapsuleDestroyed");
         yield return new WaitForSeconds(0.5f);

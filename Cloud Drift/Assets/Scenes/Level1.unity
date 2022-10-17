@@ -666,6 +666,9 @@ MonoBehaviour:
   enemyMediumDeathVolume: 1
   enemyLargeDeath: {fileID: 8300000, guid: 2f972bf32e1bf5748919b830d6ee05a0, type: 3}
   enemyLargeDeathVolume: 1
+  capsuleDestroyedClip: {fileID: 8300000, guid: e9bb55153cdcda24698f991c26b1f28c,
+    type: 3}
+  capsuleDestroyedVolume: 1
   playerHealthClip: {fileID: 8300000, guid: b6a134c9f2377e248a4c14ea2ad512c9, type: 3}
   playerHealthVolume: 0.5
   playerPowerupClip: {fileID: 8300000, guid: 266dc4a8e66a1a244890812a107da63e, type: 3}

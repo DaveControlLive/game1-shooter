@@ -29,6 +29,8 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] [Range(0f, 1f)] float enemyLargeDeathVolume = 1f;
 
     [Header("Upgrades")]
+    [SerializeField] AudioClip capsuleDestroyedClip;
+    [SerializeField] [Range(0f, 1f)] float capsuleDestroyedVolume = 1f;
     [SerializeField] AudioClip playerHealthClip;
     [SerializeField] [Range(0f, 1f)] float playerHealthVolume = 1f;
     [SerializeField] AudioClip playerPowerupClip;
@@ -81,6 +83,11 @@ public class AudioPlayer : MonoBehaviour
         {
             PlayClip(enemyLargeDeath, enemyLargeDeathVolume);
         }
+    }
+
+    public void PlayCapsuleDestroyed()
+    {
+        PlayClip(capsuleDestroyedClip, capsuleDestroyedVolume);
     }
 
     public void PlayPlayerHealthClip()
