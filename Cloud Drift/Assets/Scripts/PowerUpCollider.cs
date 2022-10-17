@@ -60,6 +60,7 @@ public class PowerUpCollider : MonoBehaviour
         GetComponent<PowerUpGetter>().SetPowerup(powerupType);
         GetComponent<PolygonCollider2D>().enabled = false;
         audioPlayer.PlayCapsuleDestroyed();
+        canGetPower = true;
 
         capsuleAnimator.SetTrigger("CapsuleDestroyed");
         yield return new WaitForSeconds(0.5f);
