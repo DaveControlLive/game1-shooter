@@ -40,6 +40,7 @@ public class PlayerHealth : MonoBehaviour
     public void GetHealth(int health)
     {
         currentHealth += health;
+        audioPlayer.PlayPlayerHealthClip();
         if (currentHealth >= maxHealth)
         {
             currentHealth = maxHealth;

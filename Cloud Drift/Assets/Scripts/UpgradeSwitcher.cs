@@ -13,9 +13,11 @@ public class UpgradeSwitcher : MonoBehaviour
     PlayerHealth playerHealth;
 
     Animator shipAnimator;
+    AudioPlayer audioPlayer;
 
     void Awake()
     {
+        audioPlayer = FindObjectOfType<AudioPlayer>();
         shipAnimator = GetComponent<Animator>();
         playerHealth = GetComponent<PlayerHealth>();
     }
@@ -139,12 +141,14 @@ public class UpgradeSwitcher : MonoBehaviour
         if (upgradeType == 2 && currentSpeedUpgrade < 2)
         {
             currentSpeedUpgrade++;
+            audioPlayer.PlayPlayerPowerupClip();
             SetSpeedUpgradeLevel();
         }
         //Gun
         if (upgradeType == 3 && currentGunUpgrade < 2)
         {
             currentGunUpgrade++;
+            audioPlayer.PlayPlayerPowerupClip();
             SetGunUpgradeLevel();
         }
     }

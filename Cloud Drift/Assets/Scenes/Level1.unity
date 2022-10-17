@@ -666,6 +666,10 @@ MonoBehaviour:
   enemyMediumDeathVolume: 1
   enemyLargeDeath: {fileID: 8300000, guid: 2f972bf32e1bf5748919b830d6ee05a0, type: 3}
   enemyLargeDeathVolume: 1
+  playerHealthClip: {fileID: 8300000, guid: b6a134c9f2377e248a4c14ea2ad512c9, type: 3}
+  playerHealthVolume: 1
+  playerPowerupClip: {fileID: 8300000, guid: f78292821865a4aceb6180256d54735c, type: 3}
+  playerPowerupVolume: 1
 --- !u!82 &1776520458
 AudioSource:
   m_ObjectHideFlags: 0

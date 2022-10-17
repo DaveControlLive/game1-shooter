@@ -28,6 +28,12 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] AudioClip enemyLargeDeath;
     [SerializeField] [Range(0f, 1f)] float enemyLargeDeathVolume = 1f;
 
+    [Header("Upgrades")]
+    [SerializeField] AudioClip playerHealthClip;
+    [SerializeField] [Range(0f, 1f)] float playerHealthVolume = 1f;
+    [SerializeField] AudioClip playerPowerupClip;
+    [SerializeField] [Range(0f, 1f)] float playerPowerupVolume = 1f;
+
     public void PlayShootingClip(int upgradeLevel)
     {
         if(upgradeLevel == 0)
@@ -73,6 +79,16 @@ public class AudioPlayer : MonoBehaviour
         {
             PlayClip(enemyLargeDeath, enemyLargeDeathVolume);
         }
+    }
+
+    public void PlayPlayerHealthClip()
+    {
+        PlayClip(playerHealthClip, playerHealthVolume);
+    }
+
+    public void PlayPlayerPowerupClip()
+    {
+        PlayClip(playerPowerupClip, playerPowerupVolume);
     }
 
     void PlayClip(AudioClip clip, float volume)
