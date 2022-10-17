@@ -649,27 +649,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingLevel0Clip: {fileID: 8300000, guid: eb44acb107bd68d45911ea7920d6fb8d, type: 3}
-  shootingLevel0Volume: 0.8
+  shootingLevel0Volume: 0.27
   shootingLevel1Clip: {fileID: 8300000, guid: e8e3a895b618c3a46b0cb4d7d323578e, type: 3}
-  shootingLevel1Volume: 0.8
-  shootingLevel2Clip: {fileID: 8300000, guid: 3e82e5e9eef7d47aab771d6b395b3de3, type: 3}
-  shootingLevel2Volume: 0.8
-  playerDamageClip: {fileID: 8300000, guid: bccf3fe98df8a984e937d395fa27d5f7, type: 3}
-  damageVolume: 1
+  shootingLevel1Volume: 0.611
+  shootingLevel2Clip: {fileID: 8300000, guid: 0729874895575f941bd796bffc097a48, type: 3}
+  shootingLevel2Volume: 0.693
+  playerDamageClip: {fileID: 8300000, guid: bc31a9fcf65876f479ffbb39880dfead, type: 3}
+  damageVolume: 0.528
   playerDeathClip: {fileID: 8300000, guid: b0a805c56987c4b8aa1541e33f0a0703, type: 3}
-  playerDeathVolume: 1
+  playerDeathVolume: 0.463
   enemyDamageClip: {fileID: 8300000, guid: bccf3fe98df8a984e937d395fa27d5f7, type: 3}
-  enemyDamageVolume: 1
-  enemySmallDeath: {fileID: 8300000, guid: 2490048af862344aa8119ec99892bae2, type: 3}
+  enemyDamageVolume: 0.411
+  enemySmallDeath: {fileID: 8300000, guid: 293334be50d0efe438d2f84f898216a5, type: 3}
   enemySmallDeathVolume: 1
   enemyMediumDeath: {fileID: 8300000, guid: 8db1226bee08fa54eac27f5fefd9547f, type: 3}
   enemyMediumDeathVolume: 1
   enemyLargeDeath: {fileID: 8300000, guid: 2f972bf32e1bf5748919b830d6ee05a0, type: 3}
   enemyLargeDeathVolume: 1
   playerHealthClip: {fileID: 8300000, guid: b6a134c9f2377e248a4c14ea2ad512c9, type: 3}
-  playerHealthVolume: 1
+  playerHealthVolume: 0.5
   playerPowerupClip: {fileID: 8300000, guid: f78292821865a4aceb6180256d54735c, type: 3}
-  playerPowerupVolume: 1
+  playerPowerupVolume: 0.5
 --- !u!82 &1776520458
 AudioSource:
   m_ObjectHideFlags: 0
