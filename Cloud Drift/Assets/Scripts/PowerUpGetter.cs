@@ -27,7 +27,7 @@ public class PowerUpGetter : MonoBehaviour
     {
         canGetPower = false;
         upgradeSwitcher.AddUpgrade(powerupType);
-        Destroy(transform.parent.gameObject);
+        Destroy(gameObject);
     }
 
     public void SetPowerup(int powerup)

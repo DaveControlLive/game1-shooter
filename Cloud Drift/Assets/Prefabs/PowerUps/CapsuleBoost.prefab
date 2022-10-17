@@ -93,9 +93,11 @@ GameObject:
   - component: {fileID: 1822668479353953544}
   - component: {fileID: 1822668479353953545}
   - component: {fileID: 1822668479353953546}
+  - component: {fileID: 5633517414515162598}
   - component: {fileID: 1822668479353953556}
   - component: {fileID: 3092633819584897864}
   - component: {fileID: 3554202346650903762}
+  - component: {fileID: 3473521832638154880}
   m_Layer: 12
   m_Name: CapsuleBoost
   m_TagString: Untagged
@@ -172,6 +174,22 @@ PolygonCollider2D:
       - {x: -0.49814856, y: -0.4632757}
       - {x: 0.49814874, y: -0.46327573}
       - {x: 0.8870303, y: 0.027302027}
+--- !u!58 &5633517414515162598
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822668479353953551}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.005659759, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.36982554
 --- !u!95 &1822668479353953556
 Animator:
   serializedVersion: 3
@@ -218,6 +236,18 @@ MonoBehaviour:
   capsuleAnimator: {fileID: 1822668479353953556}
   capsule: {fileID: 1822668479092450195}
   powerUp: {fileID: 1822668480137986221}
+--- !u!114 &3473521832638154880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822668479353953551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a380de963bbb3438c92386916c00e013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1822668480137986221
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,9 +259,6 @@ GameObject:
   - component: {fileID: 1822668480137986222}
   - component: {fileID: 1822668480137986223}
   - component: {fileID: 1822668480137986216}
-  - component: {fileID: 6577460985387180934}
-  - component: {fileID: 6300319325847362360}
-  - component: {fileID: 4380849352934076544}
   m_Layer: 12
   m_Name: PowerUpSprite
   m_TagString: Untagged
@@ -323,52 +350,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6577460985387180934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1822668480137986221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a380de963bbb3438c92386916c00e013, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!50 &6300319325847362360
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1822668480137986221}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &4380849352934076544
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1822668480137986221}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.005660206, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.36044744

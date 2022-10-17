@@ -7,7 +7,6 @@ public class PowerUpCollider : MonoBehaviour
     [SerializeField] Animator capsuleAnimator;
     [SerializeField] GameObject capsule;
     [SerializeField] GameObject powerUp;
-    PowerUpGetter powerupGetter;
 
     WaveConfigSO waveConfig;
     EnemySpawner enemySpawner;
@@ -58,8 +57,7 @@ public class PowerUpCollider : MonoBehaviour
 
     IEnumerator DestroyCapsule()
     {
-        powerupGetter = powerUp.GetComponent<PowerUpGetter>();
-        powerupGetter.SetPowerup(powerupType);
+        GetComponent<PowerUpGetter>().SetPowerup(powerupType);
         GetComponent<PolygonCollider2D>().enabled = false;
         audioPlayer.PlayCapsuleDestroyed();
 
