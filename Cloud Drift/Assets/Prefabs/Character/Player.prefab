@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpeed: 20
-  projectileLifetime: 1
+  projectileLifetime: 0.85
   gunLocation: {fileID: 5657552972522088897}
   gun1: {fileID: 7753998325014997585, guid: 91ac11247eed944a381f330bc5787ade, type: 3}
   gun2: {fileID: 4403419661230609240, guid: 70f95f75b5eae49aa85975dd78570c7a, type: 3}
