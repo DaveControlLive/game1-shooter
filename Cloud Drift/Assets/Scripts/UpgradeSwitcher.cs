@@ -141,7 +141,7 @@ public class UpgradeSwitcher : MonoBehaviour
         if (upgradeType == 2 && currentSpeedUpgrade < 2)
         {
             currentSpeedUpgrade++;
-            audioPlayer.PlayPlayerPowerupClip();
+            audioPlayer.PlaySpeedupClip();
             SetSpeedUpgradeLevel();
         }
         //Gun

@@ -33,6 +33,8 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] [Range(0f, 1f)] float playerHealthVolume = 1f;
     [SerializeField] AudioClip playerPowerupClip;
     [SerializeField] [Range(0f, 1f)] float playerPowerupVolume = 1f;
+    [SerializeField] AudioClip playerSpeedupClip;
+    [SerializeField] [Range(0f, 1f)] float playerSpeedupVolume = 1f;
 
     public void PlayShootingClip(int upgradeLevel)
     {
@@ -89,6 +91,11 @@ public class AudioPlayer : MonoBehaviour
     public void PlayPlayerPowerupClip()
     {
         PlayClip(playerPowerupClip, playerPowerupVolume);
+    }
+
+    public void PlaySpeedupClip()
+    {
+        PlayClip(playerSpeedupClip, playerSpeedupVolume);
     }
 
     void PlayClip(AudioClip clip, float volume)

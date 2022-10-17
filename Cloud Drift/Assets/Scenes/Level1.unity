@@ -670,6 +670,8 @@ MonoBehaviour:
   playerHealthVolume: 0.5
   playerPowerupClip: {fileID: 8300000, guid: f78292821865a4aceb6180256d54735c, type: 3}
   playerPowerupVolume: 0.5
+  playerSpeedupClip: {fileID: 8300000, guid: c602bd13978f38746b1e7187109ade87, type: 3}
+  playerSpeedupVolume: 0.5
 --- !u!82 &1776520458
 AudioSource:
   m_ObjectHideFlags: 0
