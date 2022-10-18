@@ -52,6 +52,20 @@ public class WaveConfigSO : ScriptableObject
     [Tooltip ("Add multiple paths here, and a random path will be chosen.")]
     [SerializeField] Transform[] pathPrefab;
 
+    [Header ("Beholder Mini-Boss")]
+    [Tooltip ("Movement speed of the circle as it moves left and right")]
+    [SerializeField] float circleMoveSpeed = 1f;
+    [Tooltip ("Movement speed of the beholders coming into the circle from outside")]
+    [SerializeField] float enterMoveSpeed = 0.005f;
+    [Tooltip ("Speed the circle rotates")]
+    [SerializeField] float rotationSpeed = 40;
+    [Tooltip ("Does the mini-boss appear from the right, or circle around the player?")]
+    [SerializeField] bool faceCenter = true;
+    [Tooltip ("How far left the facing left circle goes")]
+    [SerializeField] float leftBound = 0f;
+    [Tooltip ("How far right the facing left circle goes")]
+    [SerializeField] float rightBound = 4.5f;
+
     public int GetEnemyType()
     {
         return enemyType;
@@ -141,4 +155,35 @@ public class WaveConfigSO : ScriptableObject
     {
         return powerupType;
     }
+
+    public float GetCircleMoveSpeed()
+    {
+        return circleMoveSpeed;
+    }
+
+    public float GetEnterMoveSpeed()
+    {
+        return enterMoveSpeed;
+    }
+
+    public float GetRotationSpeed()
+    {
+        return rotationSpeed;
+    }
+
+    public bool GetFaceCenter()
+    {
+        return faceCenter;
+    }
+
+    public float GetLeftBound()
+    {
+        return leftBound;
+    }
+
+    public float GetRightBound()
+    {
+        return rightBound;
+    }
+
 }

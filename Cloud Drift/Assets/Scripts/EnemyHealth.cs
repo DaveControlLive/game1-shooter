@@ -13,6 +13,7 @@ public class EnemyHealth : MonoBehaviour
     Animator enemyAnimator;
 
     bool isDead;
+    bool isMiniBoss;
 
     void Awake()
     {
@@ -77,7 +78,14 @@ public class EnemyHealth : MonoBehaviour
         enemyAnimator.SetTrigger("IsDead");
 
         yield return new WaitForSeconds(animationWait);
-        Destroy(gameObject);
+        if (!isMiniBoss)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     IEnumerator EnemyHitFlash()
@@ -85,5 +93,15 @@ public class EnemyHealth : MonoBehaviour
         spriteRenderer.material.SetFloat("_FlashAmount", 1f);
         yield return new WaitForSeconds(0.05f);
         spriteRenderer.material.SetFloat("_FlashAmount", 0f);
+    }
+
+    public void IsMiniBoss()
+    {
+        isMiniBoss = true;
+    }
+
+    public bool IsDead()
+    {
+        return isDead;
     }
 }

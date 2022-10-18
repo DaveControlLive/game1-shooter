@@ -925,6 +925,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a8ea6be12fda941ae800e77fc81750cc, type: 2}
   - {fileID: 11400000, guid: 50e6d6cc99ec349c18b9e3d3e4cd39a3, type: 2}
   - {fileID: 11400000, guid: 1b9264497070b4ca6a0725ec213b3fa0, type: 2}
+  - {fileID: 11400000, guid: 31019d23de4c9490a8b35273569bc86d, type: 2}
+  - {fileID: 11400000, guid: 6a0af8360e4e346e5a5e4d19c2b1a6e2, type: 2}
 --- !u!1001 &5657552974040622031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -940,7 +942,7 @@ PrefabInstance:
     - target: {fileID: 5657552973345258999, guid: 768a711a8f1764f97bd849756b5ef1f8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5657552973345258999, guid: 768a711a8f1764f97bd849756b5ef1f8,
         type: 3}
