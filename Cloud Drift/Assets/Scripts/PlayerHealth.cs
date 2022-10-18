@@ -79,6 +79,7 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator Die()
     {
         isDead = true;
+        GetComponent<BoxCollider2D>().enabled = false;
 
         foreach (Transform child in transform)
         {
