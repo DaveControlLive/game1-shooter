@@ -21,7 +21,8 @@ MonoBehaviour:
   timeBetweenEnemySpawns: 1
   spawnTimeVariance: 0
   minimumSpawnTime: 0.2
-  timeBeforeNextWave: 5
+  timeBeforeNextWave: 0.5
+  waitForNextWave: 1
   amplitude: 2
   frequency: 0.5
   inverted: 0

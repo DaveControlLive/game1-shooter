@@ -84,6 +84,7 @@ public class EnemyHealth : MonoBehaviour
         }
         else
         {
+            TellParent();
             gameObject.SetActive(false);
         }
     }
@@ -103,5 +104,14 @@ public class EnemyHealth : MonoBehaviour
     public bool IsDead()
     {
         return isDead;
+    }
+
+    void TellParent()
+    {
+        GameObject miniboss = transform.parent.gameObject;
+        if (miniboss != null)
+        {
+            miniboss.GetComponent<MiniBossHealth>().ElementDied();
+        }
     }
 }

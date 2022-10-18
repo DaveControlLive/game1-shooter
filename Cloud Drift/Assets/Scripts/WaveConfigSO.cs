@@ -29,6 +29,8 @@ public class WaveConfigSO : ScriptableObject
     [SerializeField] float minimumSpawnTime = 0.2f;
     [Tooltip("Time before the next wave of enemies starts after final enemy of current wave is created")]
     [SerializeField] float timeBeforeNextWave = 0.5f;
+    [Tooltip("ONLY USE FOR MINIBOSSES")]
+    [SerializeField] bool waitForNextWave = false;
 
     [Header("Carrot Enemy / Power Up")]
     [Tooltip("Amplitude of sinwave")]
@@ -109,6 +111,11 @@ public class WaveConfigSO : ScriptableObject
     public float GetTimeBeforeNextWave()
     {
         return timeBeforeNextWave;
+    }
+
+    public bool WaitForNextWave()
+    {
+        return waitForNextWave;
     }
 
     public float GetAmplitude()
