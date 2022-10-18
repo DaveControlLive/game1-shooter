@@ -7,6 +7,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] List<WaveConfigSO> waveConfigs;
     WaveConfigSO currentWave;
 
+    bool waitForNextWave = false;
+
     void Start()
     {
         StartCoroutine(SpawnEnemyWaves());
@@ -25,6 +27,17 @@ public class EnemySpawner : MonoBehaviour
                 transform);
                 yield return new WaitForSeconds(currentWave.GetRandomSpawnTime());
             }
+
+            if (currentWave.WaitForNextWave())
+            {
+                waitForNextWave = true;
+            }
+
+            while (waitForNextWave)
+            {
+                yield return null;
+            }
+
             yield return new WaitForSeconds(currentWave.GetTimeBeforeNextWave());
         }
     }
@@ -32,6 +45,16 @@ public class EnemySpawner : MonoBehaviour
     public WaveConfigSO GetCurrentWave()
     {
         return currentWave;
+    }
+
+    public bool WaitForNextWave()
+    {
+        return waitForNextWave;
+    }
+
+    public void WaveIsOver()
+    {
+        waitForNextWave = false;
     }
 
 }
