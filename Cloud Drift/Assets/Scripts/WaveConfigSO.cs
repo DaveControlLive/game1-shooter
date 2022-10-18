@@ -81,7 +81,6 @@ public class WaveConfigSO : ScriptableObject
     public Transform GetRandomPath()
     {
         int randomPath = Random.Range(0, pathPrefab.Length);
-        Debug.Log(randomPath);
 
         return pathPrefab[randomPath];
     }

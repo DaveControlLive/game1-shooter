@@ -8,7 +8,6 @@ public class BeholderCirclePath : MonoBehaviour
     EnemySpawner enemySpawner;
 
     [SerializeField] GameObject[] beholders;
-    EnemyHealth[] enemyHealth;
 
     float circleMoveSpeed = 1f;
     float enterMoveSpeed = 0.005f;
@@ -103,8 +102,6 @@ public class BeholderCirclePath : MonoBehaviour
         for (int i = 0; i < beholders.Length; i++)
         {
             beholders[i].GetComponent<EnemyHealth>().IsMiniBoss();
-            //TODO enemyHealth[i] = beholders[i].GetComponent<EnemyHealth>();
-            //TODO enemyHealth[i].IsMiniBoss();
         }
     }
 
