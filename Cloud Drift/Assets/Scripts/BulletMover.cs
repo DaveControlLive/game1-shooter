@@ -31,7 +31,7 @@ public class BulletMover : MonoBehaviour
 
     void CheckPosition()
     {
-        if (transform.position.x <= -9.5f || transform.position.x >= 9.5f)
+        if (transform.position.x <= -9.5f || transform.position.x >= 8.7f)
         {
             Die();
         }
