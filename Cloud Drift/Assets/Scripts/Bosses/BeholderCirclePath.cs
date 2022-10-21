@@ -167,7 +167,8 @@ public class BeholderCirclePath : MonoBehaviour
     {
         if (faceCenter)
         {
-            transform.RotateAround(transform.position, rotater, rotationSpeed * Time.deltaTime);
+            //transform.RotateAround(transform.position, rotater, rotationSpeed * Time.deltaTime);
+            transform.Rotate(rotater, rotationSpeed * Time.deltaTime);
         }
 
         if (!faceCenter)
