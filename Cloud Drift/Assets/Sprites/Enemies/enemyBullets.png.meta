@@ -4,40 +4,40 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -7671945531170686519
-    second: bullet1
+    second: bullet1_1
   - first:
       213: -5759092256760982727
-    second: bullet2
+    second: bullet1_2
   - first:
       213: 8250281611176348159
-    second: bullet3
+    second: bullet1_3
   - first:
       213: -5466993258191319002
-    second: beam1
+    second: bullet1_4
   - first:
       213: 2516572357358322890
-    second: beam2
+    second: beholderBeam_1
   - first:
       213: 5135738642177427065
-    second: beam3
+    second: beholderBeam_2
   - first:
       213: 3244819786285031203
-    second: beam4
+    second: beholderBeam_3
   - first:
       213: -8544966872368374665
-    second: charge1
+    second: beholderBeam_4
   - first:
       213: 8608312933532810092
-    second: charge2
+    second: chargingBeam_1
   - first:
       213: -6035447241021327268
-    second: charge3
+    second: chargingBeam_2
   - first:
       213: 2886834399835463634
-    second: charge4
+    second: chargingBeam_3
   - first:
       213: -2382340751796802481
-    second: bullet4
+    second: chargingBeam_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -79,9 +79,9 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  alignment: 4
+  spritePivot: {x: 0, y: 0.5}
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,23 +119,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bullet1
+      name: bullet1_1
       rect:
         serializedVersion: 2
         x: 512
@@ -156,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bullet2
+      name: bullet1_2
       rect:
         serializedVersion: 2
         x: 1152
@@ -177,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bullet3
+      name: bullet1_3
       rect:
         serializedVersion: 2
         x: 1792
@@ -198,12 +186,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beam1
+      name: bullet1_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 640
+        x: 2432
+        y: 256
+        width: 128
         height: 128
       alignment: 4
       pivot: {x: 0, y: 0.5}
@@ -219,10 +207,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beam2
+      name: beholderBeam_1
       rect:
         serializedVersion: 2
-        x: 640
+        x: 0
         y: 128
         width: 640
         height: 128
@@ -240,10 +228,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beam3
+      name: beholderBeam_2
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 640
         y: 128
         width: 640
         height: 128
@@ -261,10 +249,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beam4
+      name: beholderBeam_3
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 1280
         y: 128
         width: 640
         height: 128
@@ -282,11 +270,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charge1
+      name: beholderBeam_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1920
+        y: 128
         width: 640
         height: 128
       alignment: 4
@@ -303,10 +291,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charge2
+      name: chargingBeam_1
       rect:
         serializedVersion: 2
-        x: 640
+        x: 0
         y: 0
         width: 640
         height: 128
@@ -324,10 +312,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charge3
+      name: chargingBeam_2
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 639
         y: 0
         width: 640
         height: 128
@@ -345,10 +333,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charge4
+      name: chargingBeam_3
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 1280
         y: 0
         width: 640
         height: 128
@@ -366,12 +354,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bullet4
+      name: chargingBeam_4
       rect:
         serializedVersion: 2
-        x: 2432
-        y: 256
-        width: 128
+        x: 1920
+        y: 0
+        width: 640
         height: 128
       alignment: 4
       pivot: {x: 0, y: 0.5}
