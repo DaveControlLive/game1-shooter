@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1057005743050576645}
   - component: {fileID: 1760054641}
   - component: {fileID: 3905982129663153261}
+  - component: {fileID: 7734868876717582859}
   m_Layer: 0
   m_Name: BeholderCircle
   m_TagString: Untagged
@@ -63,6 +64,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17a625a06283f463ba3462c645756b06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7734868876717582859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057005743050576644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1717f90be51d47518a64083745ab3f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1057005744221554510
