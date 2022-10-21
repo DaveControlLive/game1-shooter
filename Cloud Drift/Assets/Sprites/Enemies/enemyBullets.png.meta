@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -212,7 +212,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 128
-        width: 640
+        width: 638
         height: 128
       alignment: 4
       pivot: {x: 0, y: 0.5}
@@ -233,7 +233,7 @@ TextureImporter:
         serializedVersion: 2
         x: 640
         y: 128
-        width: 640
+        width: 638
         height: 128
       alignment: 4
       pivot: {x: 0, y: 0.5}
@@ -254,7 +254,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1280
         y: 128
-        width: 640
+        width: 638
         height: 128
       alignment: 4
       pivot: {x: 0, y: 0.5}
@@ -275,7 +275,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1920
         y: 128
-        width: 640
+        width: 638
         height: 128
       alignment: 4
       pivot: {x: 0, y: 0.5}
