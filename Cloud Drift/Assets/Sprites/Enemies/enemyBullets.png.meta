@@ -4,16 +4,40 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -7671945531170686519
-    second: enemyBullets_0
+    second: bullet1
   - first:
       213: -5759092256760982727
-    second: enemyBullets_1
+    second: bullet2
   - first:
       213: 8250281611176348159
-    second: enemyBullets_2
+    second: bullet3
   - first:
       213: -5466993258191319002
-    second: enemyBullets_3
+    second: beam1
+  - first:
+      213: 2516572357358322890
+    second: beam2
+  - first:
+      213: 5135738642177427065
+    second: beam3
+  - first:
+      213: 3244819786285031203
+    second: beam4
+  - first:
+      213: -8544966872368374665
+    second: charge1
+  - first:
+      213: 8608312933532810092
+    second: charge2
+  - first:
+      213: -6035447241021327268
+    second: charge3
+  - first:
+      213: 2886834399835463634
+    second: charge4
+  - first:
+      213: -2382340751796802481
+    second: bullet4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,15 +135,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemyBullets_0
+      name: bullet1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 512
+        y: 256
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,15 +156,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemyBullets_1
+      name: bullet2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 1152
+        y: 256
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,15 +177,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemyBullets_2
+      name: bullet3
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
+        x: 1792
+        y: 256
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,15 +198,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemyBullets_3
+      name: beam1
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
+        x: 0
+        y: 128
+        width: 640
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,6 +214,174 @@ TextureImporter:
       bones: []
       spriteID: 6201d08d8965124b0800000000000000
       internalID: -5466993258191319002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beam2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 640
+        height: 128
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac409e3c939ace220800000000000000
+      internalID: 2516572357358322890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beam3
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 128
+        width: 640
+        height: 128
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9768b32b51fc54740800000000000000
+      internalID: 5135738642177427065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beam4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 128
+        width: 640
+        height: 128
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f9da1676ae70d20800000000000000
+      internalID: 3244819786285031203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 128
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c900b17ed2a6980800000000000000
+      internalID: -8544966872368374665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 128
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bbf96110fd67770800000000000000
+      internalID: 8608312933532810092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge3
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 128
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58ff4226b8cd3ca0800000000000000
+      internalID: -6035447241021327268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charge4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 128
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df129f6798101820800000000000000
+      internalID: 2886834399835463634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bullet4
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 256
+        width: 128
+        height: 128
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ce63b55b930fed0800000000000000
+      internalID: -2382340751796802481
       vertices: []
       indices: 
       edges: []
