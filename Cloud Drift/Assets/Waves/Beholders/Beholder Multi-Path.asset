@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d628782477cd746e696c5a4484215b0e, type: 3}
-  m_Name: MiniBoss2
+  m_Name: Beholder Multi-Path
   m_EditorClassIdentifier: 
-  enemyType: 3
+  enemyType: 1
   powerupType: 1
   enemyPrefabs:
-  - {fileID: 1057005743050576644, guid: 86131c04acbd1447cb4f11d8934b7924, type: 3}
-  startingPosition: {x: 0, y: 0}
+  - {fileID: 4606559739616163922, guid: b6db0968504a74db9b244fc65c08db8e, type: 3}
+  startingPosition: {x: 11, y: 0}
   moveSpeed: 5
   timeBetweenEnemySpawns: 1
   spawnTimeVariance: 0
   minimumSpawnTime: 0.2
-  timeBeforeNextWave: 0.5
-  waitForNextWave: 1
+  timeBeforeNextWave: 7
+  waitForNextWave: 0
   amplitude: 2
   frequency: 0.5
   inverted: 0
@@ -30,10 +30,13 @@ MonoBehaviour:
   wobbleTime: 5
   yMax: 2.5
   yMin: -3.5
-  pathPrefab: []
+  pathPrefab:
+  - {fileID: 8906970823945423836, guid: 45ada6ae525084a0682b44af6f530413, type: 3}
+  - {fileID: 8906970823945423836, guid: 0a5c99ee1859a4e3f88d9d6bd7fe0808, type: 3}
+  - {fileID: 8906970823945423836, guid: 12f4cadc2dcaf42ce83b523baeaf58d4, type: 3}
   circleMoveSpeed: 1
   enterMoveSpeed: 0.005
   rotationSpeed: 40
-  faceCenter: 0
+  faceCenter: 1
   leftBound: 0
   rightBound: 4.5

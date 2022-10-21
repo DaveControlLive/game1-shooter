@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d628782477cd746e696c5a4484215b0e, type: 3}
-  m_Name: Carrot 2
+  m_Name: Carrot 5 HighMid
   m_EditorClassIdentifier: 
   enemyType: 1
   powerupType: 1
@@ -26,6 +26,7 @@ MonoBehaviour:
   spawnTimeVariance: 0
   minimumSpawnTime: 0.2
   timeBeforeNextWave: 1.5
+  waitForNextWave: 0
   amplitude: 2.5
   frequency: 0.7
   inverted: 0
@@ -33,4 +34,11 @@ MonoBehaviour:
   wobbleTime: 5
   yMax: 2.5
   yMin: -3.5
-  pathPrefab: {fileID: 0}
+  pathPrefab:
+  - {fileID: 0}
+  circleMoveSpeed: 1
+  enterMoveSpeed: 0.005
+  rotationSpeed: 40
+  faceCenter: 1
+  leftBound: 0
+  rightBound: 4.5
