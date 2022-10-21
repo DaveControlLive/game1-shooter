@@ -78,10 +78,10 @@ public class BeholderCirclePath : MonoBehaviour
             startUp = new Vector2(0, 10.57f);
             startDown = new Vector2(0, -10.57f);
 
-            endLeft = new Vector2(-5, 0);
-            endRight = new Vector2(5, 0);
-            endUp = new Vector2(0, 5);
-            endDown = new Vector2(0, -5);
+            endLeft = new Vector2(-5.5f, 0);
+            endRight = new Vector2(5.5f, 0);
+            endUp = new Vector2(0, 5.5f);
+            endDown = new Vector2(0, -5.5f);
         }
         else
         {

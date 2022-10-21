@@ -26,6 +26,20 @@ public class BulletMover : MonoBehaviour
             pos += velocity * Time.deltaTime;
             transform.position = pos;
         }
+        CheckPosition();
+    }
+
+    void CheckPosition()
+    {
+        if (transform.position.x <= -9.5f || transform.position.x >= 8.7f)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 
     public void StartBullet(Vector2 gunDirection, float speed, float lifeTime)
