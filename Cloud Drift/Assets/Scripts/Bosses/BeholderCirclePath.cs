@@ -55,6 +55,7 @@ public class BeholderCirclePath : MonoBehaviour
     {
         MoveLeftRight();
         RotateAround();
+        CheckForDeaths();
     }
 
     void GetWaveData()
@@ -187,8 +188,8 @@ public class BeholderCirclePath : MonoBehaviour
         }
     }
 
-    public GameObject[] GetBeholders()
+    void CheckForDeaths()
     {
-        return beholders;
+
     }
 }

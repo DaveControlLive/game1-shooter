@@ -910,7 +910,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveConfigs:
+<<<<<<< HEAD
   - {fileID: 11400000, guid: 31019d23de4c9490a8b35273569bc86d, type: 2}
+=======
+  - {fileID: 11400000, guid: dd619032b7043486e9998a3617dc3554, type: 2}
+>>>>>>> parent of 5693d3e (Beam works partially with Minibosses)
   - {fileID: 11400000, guid: 50e6d6cc99ec349c18b9e3d3e4cd39a3, type: 2}
   - {fileID: 11400000, guid: 567df43101f7f4f05bd67799fe3c2233, type: 2}
   - {fileID: 11400000, guid: 66e34ec4c8fff4df99d85a281adb6ad3, type: 2}
