@@ -53,8 +53,16 @@ public class WaveConfigSO : ScriptableObject
     [Header("Beholder Enemy")]
     [Tooltip ("Add multiple paths here, and a random path will be chosen.")]
     [SerializeField] Transform[] pathPrefab;
+    [Tooltip("Time in-between each beam after firing (or at start")]
+    [SerializeField] float timeBetweenBeams = 2.8f;
+    [Tooltip("Length charging animation holds")]
+    [SerializeField] float chargeLength = 0.5f;
+    [Tooltip("Length beam is out for")]
+    [SerializeField] float beamLength = 3f;
 
-    [Header ("Beholder Mini-Boss")]
+    [Header("Beholder Mini-Boss")]
+    [Tooltip("Is this a miniboss?")]
+    [SerializeField] bool isMiniBoss = false;
     [Tooltip ("Movement speed of the circle as it moves left and right")]
     [SerializeField] float circleMoveSpeed = 1f;
     [Tooltip ("Movement speed of the beholders coming into the circle from outside")]
@@ -160,6 +168,26 @@ public class WaveConfigSO : ScriptableObject
     public int GetPowerupType()
     {
         return powerupType;
+    }
+
+    public float GetTimeBetweenBeams()
+    {
+        return timeBetweenBeams;
+    }
+
+    public float GetChargeLength()
+    {
+        return chargeLength;
+    }
+
+    public float GetBeamLength()
+    {
+        return beamLength;
+    }
+
+    public bool GetIsMiniBoss()
+    {
+        return isMiniBoss;
     }
 
     public float GetCircleMoveSpeed()

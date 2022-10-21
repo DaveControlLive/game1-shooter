@@ -17,7 +17,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 4606559739616163922, guid: b6db0968504a74db9b244fc65c08db8e, type: 3}
   startingPosition: {x: 11, y: 0}
-  moveSpeed: 5
+  moveSpeed: 1
   timeBetweenEnemySpawns: 1
   spawnTimeVariance: 0
   minimumSpawnTime: 0.2
@@ -34,6 +34,10 @@ MonoBehaviour:
   - {fileID: 8906970823945423836, guid: 45ada6ae525084a0682b44af6f530413, type: 3}
   - {fileID: 8906970823945423836, guid: 0a5c99ee1859a4e3f88d9d6bd7fe0808, type: 3}
   - {fileID: 8906970823945423836, guid: 12f4cadc2dcaf42ce83b523baeaf58d4, type: 3}
+  timeBetweenBeams: 2.8
+  chargeLength: 1
+  beamLength: 3
+  isMiniBoss: 0
   circleMoveSpeed: 1
   enterMoveSpeed: 0.005
   rotationSpeed: 40

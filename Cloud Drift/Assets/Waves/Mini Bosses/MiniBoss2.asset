@@ -31,9 +31,13 @@ MonoBehaviour:
   yMax: 2.5
   yMin: -3.5
   pathPrefab: []
+  timeBetweenBeams: 2.8
+  chargeLength: 0.5
+  beamLength: 3
+  isMiniBoss: 1
   circleMoveSpeed: 1
   enterMoveSpeed: 0.005
   rotationSpeed: 40
-  faceCenter: 0
+  faceCenter: 1
   leftBound: 0
   rightBound: 4.5

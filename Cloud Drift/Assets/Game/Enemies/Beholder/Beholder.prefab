@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 273660752245015814}
   - component: {fileID: 699035918199296659}
   - component: {fileID: 6031657225973951052}
+  - component: {fileID: 7655741282860972688}
   m_Layer: 10
   m_Name: Beholder
   m_TagString: Enemy
@@ -174,6 +175,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5cedcda02ef4f87a409b44e5d5a452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7655741282860972688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606559739616163922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd8c000370eb43d2b38e04aba7c0c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beam: {fileID: 3899503362265000922, guid: e4c2fcbaf77280a448a0ed5a19b8b2a4, type: 3}
+  beholderGun: {fileID: 1572879795050678527}
+  timeBetweenBeams: 5
+  chargeLength: 0.5
+  beamLength: 2
 --- !u!1 &4606559739996853329
 GameObject:
   m_ObjectHideFlags: 0
