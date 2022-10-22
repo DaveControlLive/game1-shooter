@@ -49,9 +49,11 @@ public class BeholderCircleShooter : MonoBehaviour
         if (fireNew)
         {
             randomNumber = Random.Range(0, beholders.Length);
-            if (beholders[randomNumber] == null) { return; }
-
-            StartCoroutine(FireNewBeam());
+            if (beholders[randomNumber].activeSelf == false) { return; }
+            else
+            {
+                StartCoroutine(FireNewBeam());
+            }
 
         }
     }
