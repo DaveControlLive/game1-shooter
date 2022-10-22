@@ -13,6 +13,8 @@ public class BeholderCircleShooter : MonoBehaviour
 
     int randomNumber;
 
+    bool beholderDied = false;
+
     GameObject[] beholders;
 
     List<Transform> elements = new List<Transform>();
@@ -41,7 +43,7 @@ public class BeholderCircleShooter : MonoBehaviour
     void Update()
     {
         GetRandomBeholder();
-        FireNewBeam();
+        CheckBeholderDeath();
     }
 
     void GetRandomBeholder()
@@ -64,5 +66,23 @@ public class BeholderCircleShooter : MonoBehaviour
         beholders[randomNumber].GetComponent<BeholderShooter>().StartNewBeam();
         yield return new WaitForSeconds(timeBetweenBeams + chargeLength + beamLength);
         fireNew = true;
+    }
+
+    void CheckBeholderDeath()
+    {
+        if (beholderDied)
+        {
+            beholderDied = false;
+            if (beholders[randomNumber].activeSelf == false)
+            {
+                StopAllCoroutines();
+                fireNew = true;
+            }
+        }
+    }
+
+    public void BeholderDied()
+    {
+        beholderDied = true;
     }
 }

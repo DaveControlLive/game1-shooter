@@ -43,6 +43,7 @@ public class MiniBossHealth : MonoBehaviour
     public void ElementDied()
     {
         numDeaths++;
+        GetComponent<BeholderCircleShooter>().BeholderDied();
     }
 
     void Die()
