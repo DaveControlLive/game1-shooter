@@ -33,8 +33,8 @@ MonoBehaviour:
   pathPrefab:
   - {fileID: 8906970823945423836, guid: c46b57d0dbcbe4b478321e685a45d094, type: 3}
   timeBetweenBeams: 2.8
-  chargeLength: 1
-  beamLength: 3
+  chargeLength: 2.5
+  beamLength: 2.5
   isMiniBoss: 0
   circleMoveSpeed: 1
   enterMoveSpeed: 0.005

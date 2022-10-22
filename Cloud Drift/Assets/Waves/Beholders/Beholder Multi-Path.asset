@@ -35,8 +35,8 @@ MonoBehaviour:
   - {fileID: 8906970823945423836, guid: 0a5c99ee1859a4e3f88d9d6bd7fe0808, type: 3}
   - {fileID: 8906970823945423836, guid: 12f4cadc2dcaf42ce83b523baeaf58d4, type: 3}
   timeBetweenBeams: 2.8
-  chargeLength: 1
-  beamLength: 3
+  chargeLength: 2.5
+  beamLength: 2.5
   isMiniBoss: 0
   circleMoveSpeed: 1
   enterMoveSpeed: 0.005
