@@ -48,6 +48,7 @@ public class BeholderCircleShooter : MonoBehaviour
     {
         if (fireNew)
         {
+            Debug.Log("Fire New");
             randomNumber = Random.Range(0, beholders.Length);
             if (beholders[randomNumber] == null) { return; }
 
