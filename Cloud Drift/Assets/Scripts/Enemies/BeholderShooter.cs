@@ -71,7 +71,7 @@ public class BeholderShooter : MonoBehaviour
 
     IEnumerator ChargeBeam()
     {
-        GameObject newBeam = Instantiate(beam, beholderGun.position, Quaternion.identity, beholderGun.transform);
+        GameObject newBeam = Instantiate(beam, beholderGun.position, beholderGun.rotation, beholderGun.transform);
         newBeam.GetComponent<BeholderBeam>().GetChargeLength(chargeLength);
         newBeam.GetComponent<BeholderBeam>().GetBeamLength(beamLength);
         yield return new WaitForSeconds(chargeLength + beamLength);
