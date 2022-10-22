@@ -32,7 +32,7 @@ MonoBehaviour:
   yMin: -3.5
   pathPrefab: []
   timeBetweenBeams: 2.8
-  chargeLength: 0.5
+  chargeLength: 1
   beamLength: 3
   isMiniBoss: 1
   circleMoveSpeed: 1

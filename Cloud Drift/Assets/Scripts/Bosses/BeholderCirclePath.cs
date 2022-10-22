@@ -84,10 +84,10 @@ public class BeholderCirclePath : MonoBehaviour
         }
         else
         {
-            startLeft = new Vector2(-3.5f, 0);
-            startRight = new Vector2(3.5f, 0);
-            startUp = new Vector2(0, 3.5f);
-            startDown = new Vector2(0, -3.5f);
+            startLeft = new Vector2(-3f, 0);
+            startRight = new Vector2(3f, 0);
+            startUp = new Vector2(0, 3f);
+            startDown = new Vector2(0, -3f);
         }
 
         beholders[0].transform.position = startDown;
