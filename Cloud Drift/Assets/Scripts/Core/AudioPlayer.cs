@@ -76,6 +76,11 @@ public class AudioPlayer : MonoBehaviour
         PlayClip(beholderBeamClip, beholderBeamVolume);
     }
 
+    public void StopBeholderBeamClip()
+    {
+        Destroy(beholderBeamClip);
+    }
+
     public void PlayEnemyDeathClip(int enemyLevel)
     {
         if(enemyLevel == 1)

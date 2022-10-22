@@ -7,9 +7,18 @@ public class BeholderBeam : MonoBehaviour
     float chargeLength = 0.5f;
     float beamLength = 3f;
 
+    bool isDead = false;
+    GameObject beamParent;
+
     void Start()
     {
         StartCoroutine(ChargeBeam());
+        beamParent = transform.parent.parent.gameObject;
+    }
+
+    void Update()
+    {
+        CheckForDeath();
     }
 
     IEnumerator ChargeBeam()
@@ -34,6 +43,15 @@ public class BeholderBeam : MonoBehaviour
     public void GetBeamLength(float beam)
     {
         beamLength = beam;
+    }
+
+    void CheckForDeath()
+    {
+        isDead = beamParent.GetComponent<BeholderShooter>().GetIsDead();
+        if (isDead)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

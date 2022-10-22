@@ -47,7 +47,6 @@ public class BeholderShooter : MonoBehaviour
     {
         if (!isDead)
         {
-            CheckForDeath();
             if (startNewBeam)
             {
                 StartCoroutine(WaitToShoot());
@@ -55,20 +54,14 @@ public class BeholderShooter : MonoBehaviour
         }
     }
 
-    void CheckForDeath()
-    {
-        if(GetComponent<EnemyHealth>().IsDead())
-        {
-            isDead = true;
-            Destroy(beholderGun.gameObject);
-        }
-    }
-
     IEnumerator WaitToShoot()
     {
         startNewBeam = false;
         yield return new WaitForSeconds(timeBetweenBeams);
-        StartCoroutine(ChargeBeam());
+        if (!isDead)
+        {
+            StartCoroutine(ChargeBeam());
+        }
     }
 
     IEnumerator ChargeBeam()
@@ -92,5 +85,15 @@ public class BeholderShooter : MonoBehaviour
     public void StartNewBeam()
     {
         startNewBeam = true;
+    }
+
+    public void IsDying()
+    {
+        isDead = true;
+    }
+
+    public bool GetIsDead()
+    {
+        return isDead;
     }
 }

@@ -72,6 +72,7 @@ public class EnemyHealth : MonoBehaviour
         if (enemyLevel == 3)
         {
             animationWait = 0.7f;
+            GetComponent<BeholderShooter>().IsDying();
         }
 
         audioPlayer.PlayEnemyDeathClip(enemyLevel);
