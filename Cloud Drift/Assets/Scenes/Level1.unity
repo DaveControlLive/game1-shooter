@@ -660,6 +660,8 @@ MonoBehaviour:
   playerDeathVolume: 0.463
   enemyDamageClip: {fileID: 8300000, guid: bccf3fe98df8a984e937d395fa27d5f7, type: 3}
   enemyDamageVolume: 0.411
+  beholderBeamClip: {fileID: 8300000, guid: b616bb51db4f4b44f865a82676569caf, type: 3}
+  beholderBeamVolume: 1
   enemySmallDeath: {fileID: 8300000, guid: 293334be50d0efe438d2f84f898216a5, type: 3}
   enemySmallDeathVolume: 1
   enemyMediumDeath: {fileID: 8300000, guid: 8db1226bee08fa54eac27f5fefd9547f, type: 3}

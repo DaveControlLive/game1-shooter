@@ -12,6 +12,7 @@ public class BeholderShooter : MonoBehaviour
 
     EnemySpawner enemySpawner;
     WaveConfigSO waveConfig;
+    AudioPlayer audioPlayer;
 
     bool autoFire = true;
     bool startNewBeam = true;
@@ -20,6 +21,7 @@ public class BeholderShooter : MonoBehaviour
     void Awake()
     {
         enemySpawner = FindObjectOfType<EnemySpawner>();
+        audioPlayer = FindObjectOfType<AudioPlayer>();
     }
 
     void Start()
@@ -71,6 +73,7 @@ public class BeholderShooter : MonoBehaviour
 
     IEnumerator ChargeBeam()
     {
+        audioPlayer.PlayBeholderBeamClip();
         GameObject newBeam = Instantiate(beam, beholderGun.position, beholderGun.rotation, beholderGun.transform);
         newBeam.GetComponent<BeholderBeam>().GetChargeLength(chargeLength);
         newBeam.GetComponent<BeholderBeam>().GetBeamLength(beamLength);
