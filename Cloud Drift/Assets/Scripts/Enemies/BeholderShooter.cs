@@ -66,7 +66,6 @@ public class BeholderShooter : MonoBehaviour
 
     IEnumerator ChargeBeam()
     {
-        audioPlayer.PlayBeholderBeamClip();
         GameObject newBeam = Instantiate(beam, beholderGun.position, beholderGun.rotation, beholderGun.transform);
         newBeam.GetComponent<BeholderBeam>().GetChargeLength(chargeLength);
         newBeam.GetComponent<BeholderBeam>().GetBeamLength(beamLength);

@@ -912,7 +912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveConfigs:
-  - {fileID: 11400000, guid: ff1c6b055ffc44e2da0052ba3f381cf6, type: 2}
+  - {fileID: 11400000, guid: 1b9264497070b4ca6a0725ec213b3fa0, type: 2}
   - {fileID: 11400000, guid: 50e6d6cc99ec349c18b9e3d3e4cd39a3, type: 2}
   - {fileID: 11400000, guid: 567df43101f7f4f05bd67799fe3c2233, type: 2}
   - {fileID: 11400000, guid: 66e34ec4c8fff4df99d85a281adb6ad3, type: 2}

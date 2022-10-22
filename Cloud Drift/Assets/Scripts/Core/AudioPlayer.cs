@@ -21,8 +21,6 @@ public class AudioPlayer : MonoBehaviour
     [Header("Enemy Damage")]
     [SerializeField] AudioClip enemyDamageClip;
     [SerializeField] [Range(0f, 1f)] float enemyDamageVolume = 1f;
-    [SerializeField] AudioClip beholderBeamClip;
-    [SerializeField] [Range(0f, 1f)] float beholderBeamVolume = 1f;
     [SerializeField] AudioClip enemySmallDeath;
     [SerializeField] [Range(0f, 1f)] float enemySmallDeathVolume = 1f;
     [SerializeField] AudioClip enemyMediumDeath;
@@ -69,16 +67,6 @@ public class AudioPlayer : MonoBehaviour
     public void PlayEnemyHitClip()
     {
         PlayClip(enemyDamageClip, enemyDamageVolume);
-    }
-
-    public void PlayBeholderBeamClip()
-    {
-        PlayClip(beholderBeamClip, beholderBeamVolume);
-    }
-
-    public void StopBeholderBeamClip()
-    {
-        Destroy(beholderBeamClip);
     }
 
     public void PlayEnemyDeathClip(int enemyLevel)
