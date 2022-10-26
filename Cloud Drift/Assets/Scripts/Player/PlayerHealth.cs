@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Shooter.Core;
 
 public class PlayerHealth : MonoBehaviour
@@ -13,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     UpgradeSwitcher upgradeSwitcher;
     AudioPlayer audioPlayer;
     CameraShake cameraShake;
+    GameSession gameSession;
 
     bool isDead = false;
 
@@ -20,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
     {
         audioPlayer = FindObjectOfType<AudioPlayer>();
         cameraShake = Camera.main.GetComponent<CameraShake>();
+        gameSession = FindObjectOfType<GameSession>();
     }
 
     void Start()
@@ -48,6 +49,11 @@ public class PlayerHealth : MonoBehaviour
         {
             cameraShake.Play();
         }
+    }
+
+    public int GetMaxHealth()
+    {
+        return maxHealth;
     }
 
     public int GetCurrentHealth()
@@ -113,6 +119,6 @@ public class PlayerHealth : MonoBehaviour
 
     void ResetLevel()
     {
-        SceneManager.LoadScene(0);
+        gameSession.ProcessPlayerDeath();
     }
 }
