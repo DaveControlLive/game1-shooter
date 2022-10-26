@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Shooter.Core;
 
 public class PlayerHealth : MonoBehaviour
@@ -47,6 +48,11 @@ public class PlayerHealth : MonoBehaviour
         {
             cameraShake.Play();
         }
+    }
+
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
     }
 
     public void GetHealth(int health)
@@ -100,6 +106,13 @@ public class PlayerHealth : MonoBehaviour
         GetComponent<PlayerController>().enabled = false;
         shipAnimator.SetTrigger("PlayerDeathTrigger");
         yield return new WaitForSeconds(0.8f);
-        Destroy(gameObject);
+        GetComponent<SpriteRenderer>().enabled = false;
+        yield return new WaitForSeconds(2.5f);
+        ResetLevel();
+    }
+
+    void ResetLevel()
+    {
+        SceneManager.LoadScene(0);
     }
 }
