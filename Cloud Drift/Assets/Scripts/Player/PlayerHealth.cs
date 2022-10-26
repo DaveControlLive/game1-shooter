@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Shooter.Core;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -10,12 +11,14 @@ public class PlayerHealth : MonoBehaviour
     Animator shipAnimator;
     UpgradeSwitcher upgradeSwitcher;
     AudioPlayer audioPlayer;
+    CameraShake cameraShake;
 
     bool isDead = false;
 
     void Awake()
     {
         audioPlayer = FindObjectOfType<AudioPlayer>();
+        cameraShake = Camera.main.GetComponent<CameraShake>();
     }
 
     void Start()
@@ -27,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        ShakeCamera();
         if (currentHealth <= 0 && !isDead)
         {
             StartCoroutine(Die());
@@ -34,6 +38,14 @@ public class PlayerHealth : MonoBehaviour
         else
         {
             StartCoroutine(PlayerDamaged());
+        }
+    }
+
+    void ShakeCamera()
+    {
+        if(cameraShake != null)
+        {
+            cameraShake.Play();
         }
     }
 
@@ -50,7 +62,6 @@ public class PlayerHealth : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         DamageDealer damageDealer = other.GetComponent<DamageDealer>();
-
         if (damageDealer != null)
         {
             if (other.tag == "Enemy")
