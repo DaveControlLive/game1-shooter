@@ -108,6 +108,7 @@ public class PlayerHealth : MonoBehaviour
         {
             child.gameObject.SetActive(false);
         }
+        audioPlayer.GetComponent<AudioSource>().Stop();
         audioPlayer.PlayPlayerDeathClip();
         GetComponent<PlayerController>().enabled = false;
         shipAnimator.SetTrigger("PlayerDeathTrigger");
