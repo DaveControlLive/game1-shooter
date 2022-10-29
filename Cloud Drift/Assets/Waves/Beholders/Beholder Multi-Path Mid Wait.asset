@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d628782477cd746e696c5a4484215b0e, type: 3}
-  m_Name: Beholder Multi-Path Mid Wait 1
+  m_Name: Beholder Multi-Path Mid Wait
   m_EditorClassIdentifier: 
   enemyType: 1
   powerupType: 1

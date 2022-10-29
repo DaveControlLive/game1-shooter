@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d628782477cd746e696c5a4484215b0e, type: 3}
-  m_Name: StartWinMusic
+  m_Name: Beholder Multi-Path Long Wait
   m_EditorClassIdentifier: 
   enemyType: 1
   powerupType: 1
   enemyPrefabs:
-  - {fileID: 4018902083664039794, guid: 95e480b1e9f6945759971b38417e2d1b, type: 3}
+  - {fileID: 4606559739616163922, guid: b6db0968504a74db9b244fc65c08db8e, type: 3}
   startingPosition: {x: 11, y: 0}
-  moveSpeed: 5
+  moveSpeed: 1
   timeBetweenEnemySpawns: 1
   spawnTimeVariance: 0
   minimumSpawnTime: 0.2
-  timeBeforeNextWave: 5
+  timeBeforeNextWave: 7
   waitForNextWave: 0
   amplitude: 2
   frequency: 0.5
@@ -30,10 +30,13 @@ MonoBehaviour:
   wobbleTime: 5
   yMax: 2.5
   yMin: -3.5
-  pathPrefab: []
+  pathPrefab:
+  - {fileID: 8906970823945423836, guid: 45ada6ae525084a0682b44af6f530413, type: 3}
+  - {fileID: 8906970823945423836, guid: 0a5c99ee1859a4e3f88d9d6bd7fe0808, type: 3}
+  - {fileID: 8906970823945423836, guid: 12f4cadc2dcaf42ce83b523baeaf58d4, type: 3}
   timeBetweenBeams: 2.8
-  chargeLength: 0.5
-  beamLength: 3
+  chargeLength: 2.5
+  beamLength: 2.5
   isMiniBoss: 0
   circleMoveSpeed: 1
   enterMoveSpeed: 0.005

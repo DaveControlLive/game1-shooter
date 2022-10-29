@@ -53,6 +53,12 @@ namespace Shooter.Core
             }
         }
 
+        public void AccessNextLevel()
+        {
+            int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+
         void TakeLife()
         {
             playerLives--;
