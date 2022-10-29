@@ -37,7 +37,7 @@ public class BossMusicPlayer : MonoBehaviour
     {
         audioPlayer.GetComponent<AudioSource>().volume = 1f;
         audioPlayer.GetComponent<AudioSource>().PlayOneShot(introBossClip, introBossVolume);
-        yield return new WaitForSeconds(1.62f);
+        yield return new WaitForSeconds(1.64f);
         repeatBossMusic = true;
 
     }
