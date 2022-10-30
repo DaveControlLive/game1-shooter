@@ -63,7 +63,7 @@ AnimationClip:
       value: {fileID: 3052018385701297886, guid: 979d96a91ef284809bcd3b7e74e74b34,
         type: 3}
     - time: 0.3
-      value: {fileID: 3052018385701297886, guid: 979d96a91ef284809bcd3b7e74e74b34,
+      value: {fileID: 7487422336501783089, guid: 979d96a91ef284809bcd3b7e74e74b34,
         type: 3}
     attribute: m_Sprite
     path: Speed Upgrades/playerPL2_1
@@ -109,7 +109,7 @@ AnimationClip:
     - {fileID: -3002451015142912739, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
     - {fileID: 1752594610655526629, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
     - {fileID: 3052018385701297886, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
-    - {fileID: 3052018385701297886, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
+    - {fileID: 7487422336501783089, guid: 979d96a91ef284809bcd3b7e74e74b34, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
