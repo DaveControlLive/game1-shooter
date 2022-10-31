@@ -12,6 +12,7 @@ namespace Shooter.Core
         int playerHealth;
         int maxHealth;
         int currentPower;
+        int score = 0;
 
         static GameSession instance;
 
@@ -87,6 +88,16 @@ namespace Shooter.Core
         public int GetCurrentLives()
         {
             return playerLives;
+        }
+
+        public void AddToScore(int points)
+        {
+            score += points;
+        }
+
+        public int GetScore()
+        {
+            return score;
         }
     }
 }

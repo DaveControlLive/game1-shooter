@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 7218753531334841008}
   - component: {fileID: 3616823528862852932}
   - component: {fileID: -4522602452559763166}
+  - component: {fileID: -3274376961560926598}
   m_Layer: 10
   m_Name: CarrotEnemy
   m_TagString: Enemy
@@ -225,3 +226,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+--- !u!114 &-3274376961560926598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7218753531334841013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6988b29478eaa43e9af17a8f88c78e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 100

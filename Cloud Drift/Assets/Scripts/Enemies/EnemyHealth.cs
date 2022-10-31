@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(ScoreKeeper))]
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] int enemyLevel = 1;
@@ -58,6 +59,7 @@ public class EnemyHealth : MonoBehaviour
     {
         isDead = true;
         GetComponent<DamageDealer>().TurnOff();
+        GetComponent<ScoreKeeper>().AddToScore();
         float animationWait = 0.4f;
         if (enemyLevel == 1)
         {
