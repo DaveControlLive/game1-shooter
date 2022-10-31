@@ -5,11 +5,17 @@ using Shooter.Core;
 
 public class CursorController : MonoBehaviour
 {
-    [SerializeField] Vector3 positionUp = new Vector3(-189, -249, 0);
-    [SerializeField] Vector3 positionDown = new Vector3(-189, -312, 0);
+    [SerializeField] bool startScreen;
+    [SerializeField] Vector3 startPositionUp = new Vector3(-189, -249, 0);
+    [SerializeField] Vector3 startPositionDown = new Vector3(-189, -312, 0);
+    [SerializeField] Vector3 endPositionUp = new Vector3(-189, -104, 0);
+    [SerializeField] Vector3 endPositionDOwn = new Vector3(-189, -169, 0);
 
     bool startGame = true;
     GameSession gameSession;
+
+    Vector3 positionUp;
+    Vector3 positionDown;
 
     void Awake()
     {
@@ -18,7 +24,22 @@ public class CursorController : MonoBehaviour
 
     void Start()
     {
+        SetupCursorPositions();
         GetComponent<RectTransform>().localPosition = positionUp;
+    }
+
+    void SetupCursorPositions()
+    {
+        if (startScreen)
+        {
+            positionUp = startPositionUp;
+            positionDown = startPositionDown;
+        }
+        else
+        {
+            positionUp = endPositionUp;
+            positionDown = endPositionDOwn;
+        }
     }
 
     void Update()
@@ -40,13 +61,21 @@ public class CursorController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (startGame)
+            if (startGame && startScreen)
             {
                 gameSession.AccessNextLevel();
             }
-            else
+            else if (!startGame && startScreen)
             {
                 Application.Quit();
+            }
+            else if (startGame && !startScreen)
+            {
+                gameSession.StartLevelOne();
+            }
+            else
+            {
+                gameSession.StartTitleScreen();
             }
         }
     }

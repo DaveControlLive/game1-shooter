@@ -68,6 +68,18 @@ namespace Shooter.Core
 
         void ResetGameSession()
         {
+            SceneManager.LoadScene("GameOver");
+            Destroy(gameObject);
+        }
+
+        public void StartLevelOne()
+        {
+            SceneManager.LoadScene(1);
+            Destroy(gameObject);
+        }
+
+        public void StartTitleScreen()
+        {
             SceneManager.LoadScene(0);
             Destroy(gameObject);
         }
