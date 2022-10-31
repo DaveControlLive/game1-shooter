@@ -49,12 +49,12 @@ public class CursorController : MonoBehaviour
 
     void MoveCursor()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
             GetComponent<RectTransform>().localPosition = positionDown;
             startGame = false;
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             GetComponent<RectTransform>().localPosition = positionUp;
             startGame = true;
