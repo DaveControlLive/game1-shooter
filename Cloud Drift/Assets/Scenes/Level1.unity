@@ -194,6 +194,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 749359087454771464, guid: 93c6b522a271b4f689294749ddb401c7,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 749359087454771465, guid: 93c6b522a271b4f689294749ddb401c7,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 749359087454771465, guid: 93c6b522a271b4f689294749ddb401c7,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 749359087454771465, guid: 93c6b522a271b4f689294749ddb401c7,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 749359087454771467, guid: 93c6b522a271b4f689294749ddb401c7,
         type: 3}
       propertyPath: m_Pivot.x
@@ -303,6 +323,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Score - Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 749359088897315057, guid: 93c6b522a271b4f689294749ddb401c7,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 749359088897315057, guid: 93c6b522a271b4f689294749ddb401c7,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 749359088897315062, guid: 93c6b522a271b4f689294749ddb401c7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 482
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93c6b522a271b4f689294749ddb401c7, type: 3}

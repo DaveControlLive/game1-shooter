@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 79957497}
   - component: {fileID: 79957496}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: GameOver - Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -541,7 +541,12 @@ PrefabInstance:
     - target: {fileID: 749359088897315057, guid: 93c6b522a271b4f689294749ddb401c7,
         type: 3}
       propertyPath: m_fontSize
-      value: 38
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 749359088897315057, guid: 93c6b522a271b4f689294749ddb401c7,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -276.76346
       objectReference: {fileID: 0}
     - target: {fileID: 749359088897315057, guid: 93c6b522a271b4f689294749ddb401c7,
         type: 3}
@@ -551,12 +556,12 @@ PrefabInstance:
     - target: {fileID: 749359088897315057, guid: 93c6b522a271b4f689294749ddb401c7,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 38
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 749359088897315062, guid: 93c6b522a271b4f689294749ddb401c7,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -228
+      value: -68
       objectReference: {fileID: 0}
     - target: {fileID: 749359088897315062, guid: 93c6b522a271b4f689294749ddb401c7,
         type: 3}
