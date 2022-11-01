@@ -13,14 +13,21 @@ namespace Shooter.UI
 
         GameSession gameSession;
         Transform player;
+        PlayerHealth playerHealth;
 
         int score;
         bool transparentUI = false;
+        bool playing = false;
 
         void Awake()
         {
             gameSession = FindObjectOfType<GameSession>();
-            player = FindObjectOfType<PlayerHealth>().GetComponent<Transform>();
+            playerHealth = FindObjectOfType<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                player = playerHealth.GetComponent<Transform>();
+                playing = true;
+            }
         }
 
         void Start()
@@ -30,8 +37,11 @@ namespace Shooter.UI
 
         void Update()
         {
-            UpdateTransparency();
-            UpdateScore();
+            if (playing)
+            {
+                UpdateTransparency();
+                UpdateScore();
+            }
         }
 
         void UpdateTransparency()
@@ -53,7 +63,14 @@ namespace Shooter.UI
         void UpdateScore()
         {
             score = gameSession.GetScore();
-            scoreText.text = score.ToString();
+            if (playing)
+            {
+                scoreText.text = score.ToString();
+            }
+            else
+            {
+                scoreText.text = "SCORE: " + score.ToString();
+            }
         }
     }
 

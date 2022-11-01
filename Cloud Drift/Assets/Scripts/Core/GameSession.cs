@@ -70,7 +70,6 @@ namespace Shooter.Core
         void ResetGameSession()
         {
             SceneManager.LoadScene("GameOver");
-            Destroy(gameObject);
         }
 
         public void StartLevelOne()
