@@ -1,19 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 namespace Shooter.Core
 {
-    public class CameraShake : MonoBehaviour
+    public class CameraFX : MonoBehaviour
     {
         [SerializeField] float shakeDuration = 0.2f;
-        [SerializeField] float shakeMagnitude = 0.5f;
+        [SerializeField] float shakeMagnitude = 0.3f;
+        [SerializeField] float maxAberration = 0.3f;
 
         Vector3 initialPosition;
+        ChromaticAberration chromaticAberration;
+
 
         void Start()
         {
             initialPosition = transform.position;
+            chromaticAberration = GetComponent<PostProcessVolume>().GetComponent<ChromaticAberration>();
         }
 
         public void Play()

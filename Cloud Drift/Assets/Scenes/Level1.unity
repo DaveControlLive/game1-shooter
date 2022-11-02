@@ -408,16 +408,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 1428468112231103153, guid: 003aa31edc9b34e0697c86653fe95120,
-        type: 3}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1428468112231103154, guid: 003aa31edc9b34e0697c86653fe95120,
-        type: 3}
-      propertyPath: m_AllowDynamicResolution
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 003aa31edc9b34e0697c86653fe95120, type: 3}
 --- !u!1001 &2495652566650789440
@@ -427,50 +417,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2495652565419997918, guid: de49742f6004844d9bdb84c9d0bc428a,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 49e9946577e0aa54c81f52005eaa7a62,
-        type: 3}
-    - target: {fileID: 2495652565419997919, guid: de49742f6004844d9bdb84c9d0bc428a,
-        type: 3}
-      propertyPath: animationSpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2495652566108335722, guid: de49742f6004844d9bdb84c9d0bc428a,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a17525f1b5a25964e833bb9eb472292a,
-        type: 3}
-    - target: {fileID: 2495652566108335723, guid: de49742f6004844d9bdb84c9d0bc428a,
-        type: 3}
-      propertyPath: animationSpeed
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2495652566434140566, guid: de49742f6004844d9bdb84c9d0bc428a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2495652566434140567, guid: de49742f6004844d9bdb84c9d0bc428a,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 384718dd81ea0e444b873c0bcae3f764,
-        type: 3}
-    - target: {fileID: 2495652566596308280, guid: de49742f6004844d9bdb84c9d0bc428a,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a3f84717e1331884e874b6bb52012d68,
-        type: 3}
-    - target: {fileID: 2495652566596308281, guid: de49742f6004844d9bdb84c9d0bc428a,
-        type: 3}
-      propertyPath: animationSpeed
-      value: 0.8
-      objectReference: {fileID: 0}
     - target: {fileID: 2495652566790440622, guid: de49742f6004844d9bdb84c9d0bc428a,
         type: 3}
       propertyPath: m_Name

@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     Animator shipAnimator;
     UpgradeSwitcher upgradeSwitcher;
     AudioPlayer audioPlayer;
-    CameraShake cameraShake;
+    CameraFX cameraFX;
     GameSession gameSession;
 
     bool isDead = false;
@@ -19,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
     void Awake()
     {
         audioPlayer = FindObjectOfType<AudioPlayer>();
-        cameraShake = Camera.main.GetComponent<CameraShake>();
+        cameraFX = Camera.main.GetComponent<CameraFX>();
         gameSession = FindObjectOfType<GameSession>();
     }
 
@@ -45,9 +45,9 @@ public class PlayerHealth : MonoBehaviour
 
     void ShakeCamera()
     {
-        if(cameraShake != null)
+        if(cameraFX != null)
         {
-            cameraShake.Play();
+            cameraFX.Play();
         }
     }
 
