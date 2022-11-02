@@ -177,4 +177,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeDuration: 0.2
   shakeMagnitude: 0.3
-  maxAberration: 0.3
+  maxAberration: 0.08

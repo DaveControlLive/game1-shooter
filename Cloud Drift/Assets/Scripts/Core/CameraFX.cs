@@ -12,13 +12,15 @@ namespace Shooter.Core
         [SerializeField] float maxAberration = 0.3f;
 
         Vector3 initialPosition;
+        PostProcessVolume postProcessVolume;
         ChromaticAberration chromaticAberration;
 
 
         void Start()
         {
             initialPosition = transform.position;
-            chromaticAberration = GetComponent<PostProcessVolume>().GetComponent<ChromaticAberration>();
+            postProcessVolume = GetComponent<PostProcessVolume>();
+            postProcessVolume.profile.TryGetSettings(out chromaticAberration);
         }
 
         public void Play()
@@ -38,6 +40,18 @@ namespace Shooter.Core
             transform.position = initialPosition;
         }
 
+        public void UpdateAberration(float i)
+        {
+            if (i >= 1)
+            {
+                chromaticAberration.active = false;
+            }
+            else if (i > 0)
+            {
+                chromaticAberration.active = true;
+                chromaticAberration.intensity.value = (maxAberration / i);
+            }
+        }
     }
 
 }

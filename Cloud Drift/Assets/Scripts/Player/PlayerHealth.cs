@@ -33,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= damage;
         ShakeCamera();
+        UpdateAberration();
         if (currentHealth <= 0 && !isDead)
         {
             StartCoroutine(Die());
@@ -51,6 +52,15 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    void UpdateAberration()
+    {
+        if(cameraFX != null)
+        {
+            float healthDifference = ((float)currentHealth / (float)maxHealth);
+            cameraFX.UpdateAberration(healthDifference);
+        }
+    }
+
     public int GetMaxHealth()
     {
         return maxHealth;
@@ -64,6 +74,7 @@ public class PlayerHealth : MonoBehaviour
     public void GetHealth(int health)
     {
         currentHealth += health;
+        UpdateAberration();
         audioPlayer.PlayPlayerHealthClip();
         if (currentHealth >= maxHealth)
         {
