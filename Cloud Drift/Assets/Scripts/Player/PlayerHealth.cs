@@ -105,9 +105,13 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator PlayerDamaged()
     {
         audioPlayer.PlayDamageClip();
-        GetComponent<SpriteRenderer>().material.SetFloat("_FlashAmount", 1f);
-        yield return new WaitForSeconds(0.05f);
-        GetComponent<SpriteRenderer>().material.SetFloat("_FlashAmount", 0f);
+        for (int i = 0; i < 4; i++)
+        {
+            GetComponent<SpriteRenderer>().material.SetFloat("_FlashAmount", 1f);
+            yield return new WaitForSeconds(0.05f);
+            GetComponent<SpriteRenderer>().material.SetFloat("_FlashAmount", 0f);
+            yield return new WaitForSeconds(0.05f);
+        }
     }
 
     IEnumerator Die()
